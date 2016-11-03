@@ -2,18 +2,18 @@ import React from 'react';
 
 const loreIpsum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
 
-const Comment = () => (
+const Comment = (props) => (
   <div className="comment">
     <div className="comment-heading">
       <div>
         <img src="http://placehold.it/60x60" className="img-circle" />
       </div>
       <div>
-        Info
+        {props.userName}
       </div>
     </div>
     <div className="comment-content">
-      {loreIpsum}
+      {props.content}
     </div>
   </div>
 )

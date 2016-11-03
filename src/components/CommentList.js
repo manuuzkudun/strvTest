@@ -1,22 +1,16 @@
 import React, { Component } from 'react';
 import Comment from './Comment';
 
-class CommentList extends Component {
-  render() {
-    return(
-      <div>
-        <div>
-          Comments List
-        </div>
-        <div>
-          <Comment />
-          <Comment />
-          <Comment />
-        </div>
-      </div>
-
-    );
-  }
-}
+const CommentList = (props) => (
+  <div>
+    { props.comments.map(comment =>
+      <Comment
+        key={comment.id}
+        userName={comment.userName}
+        content={comment.content}
+      />
+    )}
+  </div>
+)
 
 export default CommentList;
