@@ -21,13 +21,15 @@
 /* Section Headline */
 .section-headline h2 {
   text-transform: uppercase;
-  font-size: 19px
+  font-size: 19px;
+  font-weight: bold;
 }
 
 .section-headline h2 span{
   color: gray;
   display: block;
-  font-size: 19px
+  font-size: 19px;
+  font-weight: bold;
 }
 
 .section-headline .section-headline-decoration {
@@ -35,3 +37,16 @@
   height: 40px;
 }
 /* End Section Headline */
+
+
+.comment-heading {
+  display: block;
+}
+.comment-content {
+  display: block;
+}
+
+.test {
+  display: inline;
+  float:left;
+}
