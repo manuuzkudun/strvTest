@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/style/style.css">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   </head>
   <body>
     <!-- Begin container -->
-    <div class='container'>
+    <div class="container">
       <!-- Begin Header -->
       <header>
         <nav>
           <ul>
-            <li><a href='#about-us'>About Us</a></li>
-            <li><a href='#how-it-works'>How it Works</a></li>
-            <li><a href='#comments'>Comments</a></li>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#how-it-works">How it Works</a></li>
+            <li><a href="#comments">Comments</a></li>
           </ul>
         </nav>
         <div>
@@ -29,7 +30,7 @@
       </header>
       <!-- End Header -->
       <!-- Begin About Us section -->
-      <section id='about-us'>
+      <section id="about-us">
         <div>
           <div>01</div>
           <div>About us</div>
@@ -37,22 +38,29 @@
         </div>
         <div>Handmade</div>
         <div>
-          <div className='feature'>
-            <div>icon</div>
+          <div class="row">
+          <div class="col-sm-4 feature">
+            <div>
+              <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
+            </div>
             <div>
               <div>Designed by 10 STRV Designers</div>
               <div>Every piece of this car is handmade. Our all 10 designers check Pinterest, Dribble and Behance for inspirations and did this awesome car!</div>
             </div>
           </div>
-          <div className='feature'>
-            <div>icon</div>
+          <div class="col-sm-4 feature">
+            <div>
+              <span class="glyphicon glyphicon-leaf" aria-hidden="true"></span>
+            </div>
             <div>
               <div>Nature Handcraft Materials</div>
               <div>We using natural recycable materials like wood from our forest or co-operate with DannyP brand and his awesome leather stuff.</div>
             </div>
           </div>
-          <div className='feature'>
-            <div>icon</div>
+          <div class="col-sm-4 feature">
+            <div>
+              <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+            </div>
             <div>
               <div>Only 20 Pieces in the World!</div>
               <div>Designer is a human right? Handmade things take a lot of time and energy. Every designer have 2 cars in his pocket. So hurry up!</div>
@@ -62,22 +70,22 @@
       </section>
       <!-- End About Us section -->
       <!-- Begin How it Works section -->
-      <section id='how-it-works'>
+      <section id="how-it-works">
         <div>
           <div>02</div>
           <div>How it Works</div>
           <div></div>
         </div>
-        <div>
-          <div>
-            <div>1</div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div >1</div>
             <div>Pick Your Favourite Designer</div>
           </div>
-          <div>
+          <div class="col-sm-4">
             <div>2</div>
             <div>Give him $3M in Fancy Suitcase</div>
           </div>
-          <div>
+          <div class="col-sm-4">
             <div>3</div>
             <div>Wait for the Masterpiece</div>
           </div>
@@ -92,13 +100,13 @@
       </section>
       <!-- End How it Works section -->
       <!-- Begin Comments section -->
-      <section id='comments'>
+      <section id="comments">
         <div>
           <div>03</div>
           <div>Comments</div>
           <div></div>
         </div>
-        <div id='app-container'></div>
+        <div id="app-container"></div>
       </section>
       <!-- End Comments section -->
       <!-- Begin Footer -->
@@ -120,5 +128,5 @@
       </div>
     <!-- End container -->
   </body>
-  <script src='/bundle.js'></script>
+  <script src="/bundle.js"></script>
 </html>
