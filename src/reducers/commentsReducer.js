@@ -1,26 +1,17 @@
 import { ADD_COMMENT } from '../actions';
-
-const initialComments = [
-  {
-    id: 1,
-    content: 'Comment 1',
-    userId: 1,
-    userName: 'Jon Doe'
-  },
-  {
-    id: 2,
-    content: 'Comment 2',
-    userId: 2,
-    userName: 'Alice Foo'
-  }
-];
+import { initialComments } from '../initialComments';
 
 const INITIAL_STATE = initialComments;
+
+const generateId = (state) => {
+  return state.length;
+}
 
 export default function(state = INITIAL_STATE, action) {
   switch(action.type) {
     case ADD_COMMENT:
-      return [ ...state, action.payload ];
+      const newComment = { ...action.payload, id: generateId(state)}
+      return [ ...state, newComment ];
     default:
       return state;
   }

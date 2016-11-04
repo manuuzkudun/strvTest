@@ -18,6 +18,16 @@
 }
 /* End Main headline */
 
+
+/* Big headline */
+.big-headline {
+  font-size: 96px;
+  color: #ddd;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
 /* Section Headline */
 .section-headline h2 {
   text-transform: uppercase;
@@ -37,16 +47,3 @@
   height: 40px;
 }
 /* End Section Headline */
-
-
-.comment-heading {
-  display: block;
-}
-.comment-content {
-  display: block;
-}
-
-.test {
-  display: inline;
-  float:left;
-}

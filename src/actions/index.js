@@ -1,8 +1,13 @@
 export const ADD_COMMENT = 'ADD_COMMENT';
 
-export function addComment(comment) {
+export function addComment(commentData) {
+  const { content, userId, userName } = commentData;
   return {
     type: ADD_COMMENT,
-    payload: comment
+    payload: {
+      content,
+      userId,
+      userName
+    }
   }
 }
