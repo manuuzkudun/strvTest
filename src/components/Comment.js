@@ -3,16 +3,20 @@ import React from 'react';
 const loreIpsum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
 
 const Comment = (props) => (
-  <div className="panel panel-default">
-    <div className="panel-heading">
-      <div>
-        <img src="http://placehold.it/60x60" />
+  <div className="comment">
+    <div className="comment-heading clearfix">
+      <div className="pull-left comment-user-image">
+        <img className="img-circle" src="http://placehold.it/50x50" />
       </div>
-      <div>
-        {props.userName}
+      <div className="pull-left comment-meta">
+        <div>{props.userName}</div>
+        <div>4 Days ago</div>
+      </div>
+      <div className="pull-right">
+        <i className="fa fa-refresh" aria-hidden="true"></i>
       </div>
     </div>
-    <div className="panel-body">
+    <div className="comment-content">
       {props.content}
     </div>
   </div>

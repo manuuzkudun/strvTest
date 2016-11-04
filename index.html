@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap 101 Template</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/style/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -22,6 +23,7 @@
     <div class="container">
       <!-- Begin Header -->
       <header>
+        <!-- Begin Navigation -->
         <nav class="navbar navbar-inverse">
           <div class="container-fluid">
             <div class="navbar-header">
@@ -33,22 +35,27 @@
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="#about-us">About Us</a></li>
+                <li><a href="#about-us">About Us</a></li>
                 <li><a href="#how-it-works">How it Works</a></li>
                 <li><a href="#comments">Comments</a></li>
               </ul>
             </div>
           </div>
         </nav>
+        <!-- End Navigation -->
+        <!-- Begin Main Headline -->
         <div class="main-headline-wrapper">
           <div class="main-headline">
             <h1>New STRV M6 <span>Simple Design Car for Designers</span></h1>
           </div>
-          <div>
-            <button>Leave a Comment</button>
+          <div class="btn btn-default main-button">
+            <a href="#comments"> Leave a Comment
+              <span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
+            </a>
           </div>
         </div>
-        <div>New STRV</div>
+        <div class="big-headline">New STRV</div>
+        <!-- End Main Headline -->
       </header>
       <!-- End Header -->
       <!-- Begin About Us section -->
@@ -57,12 +64,12 @@
           <h2><span>01</span>About us</h2>
           <div class="section-headline-decoration"></div>
         </div>
-        <div>Handmade</div>
+        <div class="big-headline">Handmade</div>
         <div>
           <div class="row">
           <div class="col-sm-4 feature">
             <div>
-              <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
+              <i class="fa fa-paint-brush" aria-hidden="true"></i>
             </div>
             <div>
               <h3>Designed by 10 STRV Designers</h3>
@@ -71,7 +78,7 @@
           </div>
           <div class="col-sm-4 feature">
             <div>
-              <span class="glyphicon glyphicon-leaf" aria-hidden="true"></span>
+              <i class="fa fa-leaf" aria-hidden="true"></i>
             </div>
             <div>
               <h3>Nature Handcraft Materials</h3>
@@ -80,7 +87,7 @@
           </div>
           <div class="col-sm-4 feature">
             <div>
-              <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+              <i class="fa fa-heart-o" aria-hidden="true"></i>
             </div>
             <div>
               <h3>Only 20 Pieces in the World!</h3>
@@ -110,12 +117,16 @@
             <h3>Wait for the Masterpiece</h3>
           </div>
         </div>
-        <div>
-          <button>Choose Your Designer</button>
+        <div class="btn btn-default main-button">
+          <a href="#"> Choose Your Designer
+            <span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
+          </a>
         </div>
         <div>
-          <div>STRV M6</div>
-          <div>Image</div>
+          <div class="big-headline">STRV M6</div>
+          <div>
+            <img class="img-responsive" src="./img/car1.png" alt="">
+        </div>
         </div>
       </section>
       <!-- End How it Works section -->
@@ -134,8 +145,10 @@
           <div class="main-headline">
             <h1>Get Your STRV M6 <span>Simple Design Car for Designers</span></h1>
           </div>
-          <div>
-            <button>Build Your Own</button>
+          <div class="btn btn-default main-button">
+            <a href="#"> Build Your Own
+              <span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
+            </a>
           </div>
         </div>
         <div>
