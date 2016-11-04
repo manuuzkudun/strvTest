@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap 101 Template</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="/style/style.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -19,12 +22,23 @@
     <div class="container">
       <!-- Begin Header -->
       <header>
-        <nav>
-          <ul>
-            <li><a href="#about-us">About Us</a></li>
-            <li><a href="#how-it-works">How it Works</a></li>
-            <li><a href="#comments">Comments</a></li>
-          </ul>
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#about-us">About Us</a></li>
+                <li><a href="#how-it-works">How it Works</a></li>
+                <li><a href="#comments">Comments</a></li>
+              </ul>
+            </div>
+          </div>
         </nav>
         <div class="main-headline-wrapper">
           <div class="main-headline">
@@ -34,7 +48,7 @@
             <button>Leave a Comment</button>
           </div>
         </div>
-        <div class="big-headline">New STRV</div>
+        <div>New STRV</div>
       </header>
       <!-- End Header -->
       <!-- Begin About Us section -->
@@ -43,35 +57,34 @@
           <h2><span>01</span>About us</h2>
           <div class="section-headline-decoration"></div>
         </div>
-        <div class="big-headline">Handmade</div>
-          <div class="panel panel-default">
-            <div class="row">
-            <div class="col-sm-4 feature">
-              <div>
-                <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
-              </div>
-              <div>
-                <h3>Designed by 10 STRV Designers</h3>
-                <p>Every piece of this car is handmade. Our all 10 designers check Pinterest, Dribble and Behance for inspirations and did this awesome car!</p>
-              </div>
+        <div>Handmade</div>
+        <div>
+          <div class="row">
+          <div class="col-sm-4 feature">
+            <div>
+              <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
             </div>
-            <div class="col-sm-4 feature">
-              <div>
-                <span class="glyphicon glyphicon-leaf" aria-hidden="true"></span>
-              </div>
-              <div>
-                <h3>Nature Handcraft Materials</h3>
-                <p>We using natural recycable materials like wood from our forest or co-operate with DannyP brand and his awesome leather stuff.</p>
-              </div>
+            <div>
+              <h3>Designed by 10 STRV Designers</h3>
+              <p>Every piece of this car is handmade. Our all 10 designers check Pinterest, Dribble and Behance for inspirations and did this awesome car!</p>
             </div>
-            <div class="col-sm-4 feature">
-              <div>
-                <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
-              </div>
-              <div>
-                <h3>Only 20 Pieces in the World!</h3>
-                <p>Designer is a human right? Handmade things take a lot of time and energy. Every designer have 2 cars in his pocket. So hurry up!</p>
-              </div>
+          </div>
+          <div class="col-sm-4 feature">
+            <div>
+              <span class="glyphicon glyphicon-leaf" aria-hidden="true"></span>
+            </div>
+            <div>
+              <h3>Nature Handcraft Materials</h3>
+              <p>We using natural recycable materials like wood from our forest or co-operate with DannyP brand and his awesome leather stuff.</p>
+            </div>
+          </div>
+          <div class="col-sm-4 feature">
+            <div>
+              <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+            </div>
+            <div>
+              <h3>Only 20 Pieces in the World!</h3>
+              <p>Designer is a human right? Handmade things take a lot of time and energy. Every designer have 2 cars in his pocket. So hurry up!</p>
             </div>
           </div>
         </div>
@@ -101,7 +114,7 @@
           <button>Choose Your Designer</button>
         </div>
         <div>
-          <div class="big-headline" >STRV M6</div>
+          <div>STRV M6</div>
           <div>Image</div>
         </div>
       </section>
