@@ -1,4 +1,5 @@
 import React from 'react';
+import CommentInput from './CommentInput';
 
 const loreIpsum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
 
@@ -13,7 +14,7 @@ const Comment = (props) => (
         <div>4 Days ago</div>
       </div>
       <div className="pull-right">
-        <i className="fa fa-refresh" aria-hidden="true"></i>
+        <i className="fa fa-reply" aria-hidden="true"></i>
       </div>
     </div>
     <div className="comment-content">

@@ -3,13 +3,18 @@ import Comment from './Comment';
 
 const CommentList = (props) => (
   <div>
-    { props.comments.map(comment =>
-      <Comment
-        key={comment.id}
-        userName={comment.userName}
-        content={comment.content}
-      />
-    )}
+    <div>
+      {props.comments.length} comments
+    </div>
+    <div>
+      { props.comments.map(comment =>
+        <Comment
+          key={comment.id}
+          userName={comment.userName}
+          content={comment.content}
+        />
+      )}
+    </div>
   </div>
 )
 

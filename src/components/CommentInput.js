@@ -30,20 +30,31 @@ class CommentInput extends Component {
 
   render() {
     return(
-      <div>
-        <img src="http://placehold.it/60x60" className="img-circle" />
-        <form onSubmit={this.handleSubmit}>
-          <input
-            type="text"
-            placeholder="Enter a comment"
-            value={this.state.commentText}
-            onChange={this.handleChange}
-          />
-          <button>Submit</button>
-        </form>
+      <div className="clearfix">
+        <div className="pull-left comment-input-image">
+          <img src="http://placehold.it/60x60" className="img-circle" />
+        </div>
+        <div className="pull-left comment-input-form">
+          <form onSubmit={this.handleSubmit}>
+            <div className="input-group">
+            <input
+              className="form-control"
+              type="text"
+              placeholder="Enter a comment"
+              value={this.state.commentText}
+              onChange={this.handleChange}
+            />
+              <span><i className="fa fa-caret-right" aria-hidden="true"></i></span>
+            </div>
+          </form>
+        </div>
       </div>
     );
   }
 }
+
+
+  <span class="input-group-addon" id="basic-addon2">@example.com</span>
+
 
 export default connect(null, { addComment })(CommentInput);

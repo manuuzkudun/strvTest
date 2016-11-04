@@ -2,6 +2,23 @@
   text-align: center;
 }
 
+.panel {
+  box-shadow: gray 0px 10px 15px 5px;
+  padding: 40px;
+}
+
+#main-header {
+  background: url("../img/car-header.jpg") no-repeat;
+  -webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+height: 800px;
+}
+
+
+
+
 /* Buttons */
 .main-button {
   background-color: red;
@@ -32,9 +49,14 @@
 /* End Buttons */
 
 /* Features */
+.feature {
+}
 .feature i {
   font-size: 48px;
   color: gray;
+   width: 100%;
+   display: inline-block;
+   text-align: center;
 }
 
 /* Big headline */
@@ -104,4 +126,49 @@
 
 .comment-meta {
   margin-left: 20px;
+}
+
+/* reapeated!!! */
+.comment-input {
+  box-shadow: gray 0px 10px 15px 5px;
+  margin: 20px 0;
+  padding: 20px;
+}
+.comment-input-image {
+  margin-left: 40px;
+}
+
+.comment-input-form {
+  margin-left: 20px;
+}
+
+/* How it works section */
+.instructions h3 span {
+  color: gray;
+  font-weight: bold;
+  font-size: 48px;
+  display: block;
+}
+.main-button-wrapper {
+  text-align: center;
+  margin: 40px 0;
+}
+/* Navigation */
+.main-nav {
+  background-color: inherit;
+  border: none;
+}
+.main-nav li a {
+  color: gray !important;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
 }

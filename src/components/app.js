@@ -7,7 +7,9 @@ class App extends Component {
   render() {
     return (
       <div>
-        <CommentInput />
+        <div className="panel">
+          <CommentInput />
+        </div>
         <CommentList comments={this.props.comments}/>
       </div>
     );

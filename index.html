@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- TODO: call scripts and stylesheet from js -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,45 +20,45 @@
     <![endif]-->
   </head>
   <body>
-    <!-- Begin container -->
-    <div class="container">
-      <!-- Begin Header -->
-      <header>
-        <!-- Begin Navigation -->
-        <nav class="navbar navbar-inverse">
-          <div class="container-fluid">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-              <ul class="nav navbar-nav">
-                <li><a href="#about-us">About Us</a></li>
-                <li><a href="#how-it-works">How it Works</a></li>
-                <li><a href="#comments">Comments</a></li>
-              </ul>
-            </div>
+    <!-- Begin Header -->
+    <header id="main-header">
+      <!-- Begin Navigation -->
+      <nav class="navbar navbar-inverse main-nav">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
           </div>
-        </nav>
-        <!-- End Navigation -->
-        <!-- Begin Main Headline -->
-        <div class="main-headline-wrapper">
-          <div class="main-headline">
-            <h1>New STRV M6 <span>Simple Design Car for Designers</span></h1>
-          </div>
-          <div class="btn btn-default main-button">
-            <a href="#comments"> Leave a Comment
-              <span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
-            </a>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a href="#about-us">About Us</a></li>
+              <li><a href="#how-it-works">How it Works</a></li>
+              <li><a href="#comments">Comments</a></li>
+            </ul>
           </div>
         </div>
-        <div class="big-headline">New STRV</div>
-        <!-- End Main Headline -->
-      </header>
-      <!-- End Header -->
+      </nav>
+      <!-- End Navigation -->
+      <!-- Begin Main Headline -->
+      <div class="main-headline-wrapper">
+        <div class="main-headline">
+          <h1>New STRV M6 <span>Simple Design Car for Designers</span></h1>
+        </div>
+        <div class="btn btn-default main-button">
+          <a href="#comments"> Leave a Comment
+            <span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
+          </a>
+        </div>
+      </div>
+      <!-- End Main Headline -->
+      <div class="big-headline">New STRV</div>
+    </header>
+    <!-- End Header -->
+    <!-- Begin container -->
+    <div class="container">
       <!-- Begin About Us section -->
       <section id="about-us">
         <div class="section-headline">
@@ -65,33 +66,34 @@
           <div class="section-headline-decoration"></div>
         </div>
         <div class="big-headline">Handmade</div>
-        <div>
+        <div class="panel">
           <div class="row">
-          <div class="col-sm-4 feature">
-            <div>
-              <i class="fa fa-paint-brush" aria-hidden="true"></i>
+            <div class="col-sm-4 feature">
+              <div>
+                <i class="fa fa-paint-brush" aria-hidden="true"></i>
+              </div>
+              <div>
+                <h3>Designed by 10 STRV Designers</h3>
+                <p>Every piece of this car is handmade. Our all 10 designers check Pinterest, Dribble and Behance for inspirations and did this awesome car!</p>
+              </div>
             </div>
-            <div>
-              <h3>Designed by 10 STRV Designers</h3>
-              <p>Every piece of this car is handmade. Our all 10 designers check Pinterest, Dribble and Behance for inspirations and did this awesome car!</p>
+            <div class="col-sm-4 feature">
+              <div>
+                <i class="fa fa-leaf" aria-hidden="true"></i>
+              </div>
+              <div>
+                <h3>Nature Handcraft Materials</h3>
+                <p>We using natural recycable materials like wood from our forest or co-operate with DannyP brand and his awesome leather stuff.</p>
+              </div>
             </div>
-          </div>
-          <div class="col-sm-4 feature">
-            <div>
-              <i class="fa fa-leaf" aria-hidden="true"></i>
-            </div>
-            <div>
-              <h3>Nature Handcraft Materials</h3>
-              <p>We using natural recycable materials like wood from our forest or co-operate with DannyP brand and his awesome leather stuff.</p>
-            </div>
-          </div>
-          <div class="col-sm-4 feature">
-            <div>
-              <i class="fa fa-heart-o" aria-hidden="true"></i>
-            </div>
-            <div>
-              <h3>Only 20 Pieces in the World!</h3>
-              <p>Designer is a human right? Handmade things take a lot of time and energy. Every designer have 2 cars in his pocket. So hurry up!</p>
+            <div class="col-sm-4 feature">
+              <div>
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
+              </div>
+              <div>
+                <h3>Only 20 Pieces in the World!</h3>
+                <p>Designer is a human right? Handmade things take a lot of time and energy. Every designer have 2 cars in his pocket. So hurry up!</p>
+              </div>
             </div>
           </div>
         </div>
@@ -103,30 +105,31 @@
           <h2><span>02</span>How it Works</h2>
           <div class="section-headline-decoration"></div>
         </div>
-        <div class="row">
-          <div class="col-sm-4">
-            <div >1</div>
-            <h3>Pick Your Favourite Designer</h3>
-          </div>
-          <div class="col-sm-4">
-            <div>2</div>
-            <h3>Give him $3M in Fancy Suitcase</h3>
-          </div>
-          <div class="col-sm-4">
-            <div>3</div>
-            <h3>Wait for the Masterpiece</h3>
+        <div class="instructions">
+          <div class="row">
+            <div class="col-sm-4">
+              <h3><span>1</span>Pick Your Favourite Designer</h3>
+            </div>
+            <div class="col-sm-4">
+              <h3><span>2</span>Give him $3M in Fancy Suitcase</h3>
+            </div>
+            <div class="col-sm-4">
+              <h3><span>3</span>Wait for the Masterpiece</h3>
+            </div>
           </div>
         </div>
-        <div class="btn btn-default main-button">
-          <a href="#"> Choose Your Designer
-            <span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
-          </a>
+        <div class="main-button-wrapper">
+          <div class="btn btn-default main-button">
+            <a href="#"> Choose Your Designer
+              <span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
+            </a>
+          </div>
         </div>
         <div>
           <div class="big-headline">STRV M6</div>
           <div>
             <img class="img-responsive" src="./img/car1.png" alt="">
-        </div>
+          </div>
         </div>
       </section>
       <!-- End How it Works section -->
@@ -156,7 +159,7 @@
         </div>
       </footer>
       <!-- End Footer -->
-      </div>
+    </div>
     <!-- End container -->
   </body>
   <script src="/bundle.js"></script>
