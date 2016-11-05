@@ -1,3 +1,102 @@
+/*** Generic Components ***/
+/* Buttons */
+.main-button-wrapper {
+  text-align: center;
+  margin: 60px 0;
+}
+
+.main-button {
+  background-color: #ef0d33;
+  border: none;
+  border-radius: 0;
+  padding: 15px 10px;
+}
+
+.main-button:hover {
+  background-color: #ef0d33;
+}
+
+.main-button:active {
+  background-color: #ef0d33;
+}
+
+.main-button a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.main-button span {
+  margin-left: 40px;
+}
+
+/* End Buttons */
+
+/* Big headline */
+.big-headline {
+  font-size: 180px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: gray;
+}
+/* Big headline */
+
+/*** End Generic components ***/
+/*** HEADER ***/
+
+/* Main Navigation */
+.navbar .navbar-nav {
+  margin-top: 40px;
+  display: inline-block;
+  float: none;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.main-nav {
+  background-color: inherit;
+  border: none;
+}
+
+#myNavbar li>a {
+  color: gray !important;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 5px 15px;
+}
+
+#myNavbar li>a:hover {
+  color: white !important;
+  border-bottom: #ef0d33 solid 2px;
+}
+
+/* End Main Navigation */
+
+/* Main headline */
+.main-headline {
+  text-align: center;
+  margin-top: 240px;
+}
+
+.main-headline h1 {
+  font-size: 72px;
+  font-weight: bold;
+}
+
+.main-headline span {
+  display: block;
+  font-size: 26px;
+}
+/* End Main headline */
+
+/*** END HEADER ***/
+
+
+
+
 .center {
   text-align: center;
 }
@@ -19,34 +118,7 @@ height: 800px;
 
 
 
-/* Buttons */
-.main-button {
-  background-color: red;
-  border: none;
-  border-radius: 0;
-  padding: 10px;
-}
 
-.main-button:hover {
-  background-color: red;
-}
-
-.main-button:active {
-  background-color: red;
-}
-
-.main-button a {
-  color: white;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.main-button span {
-  margin-left: 30px;
-}
-
-/* End Buttons */
 
 /* Features */
 .feature {
@@ -59,31 +131,9 @@ height: 800px;
    text-align: center;
 }
 
-/* Big headline */
-.big-headline {
-  font-size: 96px;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: gray;
-  text-align: center;
-}
 
-/* Main headline */
-.main-headline-wrapper {
-  text-align: center;
-}
 
-.main-headline h1 {
-  font-size: 72px;
-  font-weight: bold;
-}
 
-.main-headline span {
-  display: block;
-  font-size: 26px;
-  font-weight: bold;
-}
-/* End Main headline */
 
 /* Section Headline */
 .section-headline h2 {
@@ -100,7 +150,7 @@ height: 800px;
 }
 
 .section-headline .section-headline-decoration {
-  border-left: solid red 3px;
+  border-left: solid #ef0d33 3px;
   height: 40px;
 }
 /* End Section Headline */
@@ -148,34 +198,4 @@ height: 800px;
   font-weight: bold;
   font-size: 48px;
   display: block;
-}
-.main-button-wrapper {
-  text-align: center;
-  margin: 40px 0;
-}
-/* Navigation */
-.navbar .navbar-nav {
-  display: inline-block;
-  float: none;
-}
-
-.navbar .navbar-collapse {
-  text-align: center;
-}
-
-.main-nav {
-  background-color: inherit;
-  border: none;
-}
-
-#myNavbar li>a {
-  color: gray !important;
-  text-transform: uppercase;
-  font-weight: bold;
-  padding: 5px 15px;
-}
-
-#myNavbar li>a:hover {
-  color: white !important;
-  border-bottom: red solid 2px;
 }
