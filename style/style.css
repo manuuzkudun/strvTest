@@ -33,12 +33,40 @@
 
 /* End Buttons */
 
+/* Panels */
+.panel {
+  box-shadow: lightgray 0px 10px 15px 5px;
+  padding: 40px;
+}
+/* End Panels */
+
+/* Section Headline */
+.section-headline {
+  margin: 60px 0;
+}
+.section-headline h2 {
+  text-transform: uppercase;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.section-headline h2>span{
+  color: lightgray;
+  display: block;
+}
+
+.section-headline .section-headline-decoration {
+  border-left: solid #ef0d33 3px;
+  height: 80px;
+}
+/* End Section Headline */
+
 /* Big headline */
 .big-headline {
   font-size: 180px;
   text-transform: uppercase;
   font-weight: bold;
-  color: gray;
+  color: lightgray;
 }
 /* Big headline */
 
@@ -62,7 +90,7 @@
 }
 
 #myNavbar li>a {
-  color: gray !important;
+  color: lightgray !important;
   text-transform: uppercase;
   font-weight: bold;
   padding: 5px 15px;
@@ -101,10 +129,7 @@
   text-align: center;
 }
 
-.panel {
-  box-shadow: gray 0px 10px 15px 5px;
-  padding: 40px;
-}
+
 
 #main-header {
   background: url("../img/car-header.jpg") no-repeat;
@@ -122,42 +147,40 @@ height: 800px;
 
 /* Features */
 .feature {
+  padding: 0 40px;
 }
-.feature i {
+.feature-icon {
+  margin-bottom: 60px;
+}
+
+.feature-icon i {
   font-size: 48px;
-  color: gray;
-   width: 100%;
-   display: inline-block;
-   text-align: center;
+  color: lightgray;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+
+.feature-content > h3 {
+  margin: 20px 0;
+}
+
+.feature-content > p {
+  color: lightgray;
+}
+
+#features-panel .feature:nth-child(even) {
+  border-left: solid lightgray 2px;
+  border-right: solid lightgray 2px;
+
 }
 
 
 
-
-
-/* Section Headline */
-.section-headline h2 {
-  text-transform: uppercase;
-  font-size: 19px;
-  font-weight: bold;
-}
-
-.section-headline h2 span{
-  color: gray;
-  display: block;
-  font-size: 19px;
-  font-weight: bold;
-}
-
-.section-headline .section-headline-decoration {
-  border-left: solid #ef0d33 3px;
-  height: 40px;
-}
-/* End Section Headline */
 
 /* Comment */
 .comment {
-  box-shadow: gray 0px 10px 15px 5px;
+  box-shadow: lightgray 0px 10px 15px 5px;
   margin: 20px 0;
   padding: 20px;
 }
@@ -180,7 +203,7 @@ height: 800px;
 
 /* reapeated!!! */
 .comment-input {
-  box-shadow: gray 0px 10px 15px 5px;
+  box-shadow: lightgray 0px 10px 15px 5px;
   margin: 20px 0;
   padding: 20px;
 }
@@ -194,7 +217,7 @@ height: 800px;
 
 /* How it works section */
 .instructions h3 span {
-  color: gray;
+  color: lightgray;
   font-weight: bold;
   font-size: 48px;
   display: block;
