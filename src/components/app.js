@@ -10,14 +10,20 @@ class App extends Component {
         <div className="panel">
           <CommentInput />
         </div>
-        <CommentList comments={this.props.comments}/>
+        <div>
+          {this.props.allComments.length} comments
+        </div>
+        <CommentList comments={this.props.parentComments}/>
       </div>
     );
   }
 }
 
 const mapStateToProps = (state) => {
-  return { comments: state.comments }
+  return {
+    parentComments: state.comments.filter(comment => comment.parentComment === null),
+    allComments: state.comments
+   }
 };
 
 export default connect(mapStateToProps)(App);

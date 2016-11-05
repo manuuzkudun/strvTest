@@ -94,6 +94,7 @@
   text-transform: uppercase;
   font-weight: bold;
   padding: 5px 15px;
+  border-bottom: transparent solid 2px;
 }
 
 #myNavbar li>a:hover {
@@ -216,6 +217,11 @@ height: 800px;
   box-shadow: lightgray 0px 10px 15px 5px;
   margin: 20px 0;
   padding: 20px;
+  border-left: solid #fff 2px;
+}
+
+.comment:hover {
+  border-left: solid #ef0d33 2px;
 }
 
 .comment-heading {

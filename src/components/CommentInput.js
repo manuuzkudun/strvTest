@@ -19,10 +19,12 @@ class CommentInput extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
+    const parentComment = typeof(this.props.parentComment) === 'number' ? this.props.parentComment: null;
     const commentData = {
       content: this.state.commentText,
       userName: 'Manu Uzkudun',
-      userId: 3
+      userId: 3,
+      parentComment
     }
     this.props.addComment(commentData);
     this.props.showAnswerInput(null);
