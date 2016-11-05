@@ -122,8 +122,69 @@
 
 /*** END HEADER ***/
 
+/*** ABOUT US SECTION ***/
+/* Features */
+.feature {
+}
+.feature-icon {
+  margin-bottom: 60px;
+}
 
+.feature-icon i {
+  font-size: 48px;
+  color: lightgray;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
 
+.feature-content {
+  padding: 0 40px;
+}
+
+.feature-content > h3 {
+  margin: 20px 0;
+}
+
+.feature-content > p {
+  color: lightgray;
+  font-size: 16px;
+}
+
+.feature:nth-of-type(2) .feature-content{
+  border-left: solid lightgray 2px;
+  border-right: solid lightgray 2px;
+
+}
+
+/*** END ABOUT US SECTION ***/
+/*** HOW IT WORKS SECTION ***/
+/* How it works section */
+.instruction {
+  padding: 0 60px;
+}
+
+.instructions h3 {
+  color: red;
+  font-size: 128px;
+  color: lightgray;
+  font-weight: bold;
+}
+
+.instructions h3 span{
+  display: block;
+  font-size: 26px;
+  color:black;
+  z-index: 100;
+  position: absolute;
+  top: 80px;
+}
+
+.instruction:nth-of-type(2) {
+  border-left: solid lightgray 2px;
+  border-right: solid lightgray 2px;
+}
+/*** END HOW IT WORKS SECTION ***/
 
 .center {
   text-align: center;
@@ -145,35 +206,7 @@ height: 800px;
 
 
 
-/* Features */
-.feature {
-  padding: 0 40px;
-}
-.feature-icon {
-  margin-bottom: 60px;
-}
 
-.feature-icon i {
-  font-size: 48px;
-  color: lightgray;
-  width: 100%;
-  display: inline-block;
-  text-align: center;
-}
-
-.feature-content > h3 {
-  margin: 20px 0;
-}
-
-.feature-content > p {
-  color: lightgray;
-}
-
-#features-panel .feature:nth-child(even) {
-  border-left: solid lightgray 2px;
-  border-right: solid lightgray 2px;
-
-}
 
 
 
@@ -213,12 +246,4 @@ height: 800px;
 
 .comment-input-form {
   margin-left: 20px;
-}
-
-/* How it works section */
-.instructions h3 span {
-  color: lightgray;
-  font-weight: bold;
-  font-size: 48px;
-  display: block;
 }
