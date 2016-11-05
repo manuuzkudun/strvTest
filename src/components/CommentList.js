@@ -10,6 +10,7 @@ const CommentList = (props) => (
       { props.comments.map(comment =>
         <Comment
           key={comment.id}
+          id={comment.id}
           userName={comment.userName}
           content={comment.content}
         />

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { addComment } from '../actions';
+import { addComment, showAnswerInput } from '../actions';
 
 class CommentInput extends Component {
 
@@ -25,6 +25,7 @@ class CommentInput extends Component {
       userId: 3
     }
     this.props.addComment(commentData);
+    this.props.showAnswerInput(null);
     this.setState({ commentText: '' });
   }
 
@@ -57,4 +58,4 @@ class CommentInput extends Component {
   <span class="input-group-addon" id="basic-addon2">@example.com</span>
 
 
-export default connect(null, { addComment })(CommentInput);
+export default connect(null, { addComment, showAnswerInput })(CommentInput);
