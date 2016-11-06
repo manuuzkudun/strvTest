@@ -12,6 +12,7 @@ const CommentList = (props) => (
           content={comment.content}
           date={comment.date}
           parentComment={comment.parentComment}
+          userPictureUrl={comment.userPictureUrl}
         />
       )}
     </div>

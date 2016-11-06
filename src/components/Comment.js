@@ -31,17 +31,17 @@ class Comment extends Component {
   render() {
     const comments = this.props.comments
       .filter(comment => comment.parentComment === this.props.id);
-    const style = this.props.parentComment ? {marginLeft: '40px'} : null;
+    const style = typeof(this.props.parentComment) === 'number' ? {marginLeft: '40px'} : null;
     return(
       <div>
         <div className="comment" style={style}>
           <div className="comment-heading clearfix">
             <div className="pull-left comment-user-image">
-              <img className="img-circle" src="http://placehold.it/50x50" />
+              <img className="img-circle" src={this.props.userPictureUrl} />
             </div>
             <div className="pull-left comment-meta">
-              <div>{this.props.userName}</div>
-              <div>{ moment(this.props.date).fromNow() }</div>
+              <div className="comment-meta-username">{this.props.userName}</div>
+              <div className="comment-meta-date">{ moment(this.props.date).fromNow() }</div>
             </div>
               { this.renderReplyButton() }
           </div>

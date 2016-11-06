@@ -7,13 +7,17 @@ class App extends Component {
   render() {
     return (
       <div>
-        <div className="panel">
+        <div className="comment-input-panel">
           <CommentInput />
         </div>
-        <div>
-          {this.props.allComments.length} comments
+        <div className="comment-list-wrapper">
+          <div className="comments-quantity">
+            {this.props.allComments.length} Comments
+          </div>
+          <div>
+            <CommentList comments={this.props.parentComments} />
+          </div>
         </div>
-        <CommentList comments={this.props.parentComments}/>
       </div>
     );
   }

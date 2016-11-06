@@ -9,6 +9,13 @@ class CommentInput extends Component {
     this.state = {
       commentText: ''
     }
+    //TODO: Move it to the redux state
+    this.currentUser = {
+      userName: 'John Doe',
+      userId: 3,
+      userPictureUrl: 'https://randomuser.me/api/portraits/thumb/men/7.jpg'
+    };
+
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -18,12 +25,14 @@ class CommentInput extends Component {
   }
 
   handleSubmit(event) {
+    const { userId, userName, userPictureUrl } = this.currentUser;
     event.preventDefault();
     const parentComment = typeof(this.props.parentComment) === 'number' ? this.props.parentComment: null;
     const commentData = {
       content: this.state.commentText,
-      userName: 'Manu Uzkudun',
-      userId: 3,
+      userName,
+      userId,
+      userPictureUrl,
       parentComment
     }
     this.props.addComment(commentData);
@@ -31,22 +40,26 @@ class CommentInput extends Component {
     this.setState({ commentText: '' });
   }
 
+  componentDidMount() {
+    this.textInput.focus();
+  }
+
   render() {
     return(
       <div className="clearfix">
         <div className="pull-left comment-input-image">
-          <img src="http://placehold.it/60x60" className="img-circle" />
+          <img src={this.currentUser.userPictureUrl} className="img-circle" />
         </div>
         <div className="pull-left comment-input-form">
           <form onSubmit={this.handleSubmit}>
-            <div className="input-group">
-            <input
-              className="form-control"
-              type="text"
-              placeholder="Enter a comment"
-              value={this.state.commentText}
-              onChange={this.handleChange}
-            />
+            <div>
+              <input
+                ref={(input) => this.textInput = input}
+                type="text"
+                placeholder="Write your comment here..."
+                value={this.state.commentText}
+                onChange={this.handleChange}
+              />
               <span><i className="fa fa-caret-right" aria-hidden="true"></i></span>
             </div>
           </form>
