@@ -8,11 +8,10 @@ const CommentList = (props) => (
         <Comment
           key={comment.id}
           id={comment.id}
-          userName={comment.userName}
           content={comment.content}
           date={comment.date}
           parentComment={comment.parentComment}
-          userPictureUrl={comment.userPictureUrl}
+          user={comment.user}
         />
       )}
     </div>

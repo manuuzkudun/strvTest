@@ -37,10 +37,10 @@ class Comment extends Component {
         <div className="comment" style={style}>
           <div className="comment-heading clearfix">
             <div className="pull-left comment-user-image">
-              <img className="img-circle" src={this.props.userPictureUrl} />
+              <img className="img-circle" src={this.props.user.userPictureUrl} />
             </div>
             <div className="pull-left comment-meta">
-              <div className="comment-meta-username">{this.props.userName}</div>
+              <div className="comment-meta-username">{this.props.user.userName}</div>
               <div className="comment-meta-date">{ moment(this.props.date).fromNow() }</div>
             </div>
               { this.renderReplyButton() }

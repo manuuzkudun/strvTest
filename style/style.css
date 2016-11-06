@@ -201,12 +201,13 @@
 
 
 #main-header {
-  background: url("../img/car-header.jpg") no-repeat;
-  -webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
+  background: url("../img/car-header.jpg") center center no-repeat;
 background-size: cover;
-height: 800px;
+}
+
+#main-footer {
+  background: url("../img/car-header.jpg") center center no-repeat;
+background-size: cover;
 }
 
 
@@ -268,7 +269,6 @@ height: 800px;
 
 .comment-meta-username {
   font-size: 20px;
-  color: gray;
 }
 .comment-meta-date{
   color: lightgray;
@@ -304,3 +304,10 @@ height: 800px;
   font-size: 24px;
   color: lightgray;
 }
+
+
+
+
+/*** END COMMENTS SECTION ***/
+
+/*** FOOTER ***/
