@@ -44,21 +44,25 @@ class CommentInput extends Component {
 
   render() {
     return(
-      <div className="clearfix">
-        <div className="pull-left comment-input-image">
-          <img src={this.props.currentUser.userPictureUrl} className="img-circle" />
+      <div className="row comment-input-wrapper">
+        <div className="col-sm-2">
+          <img src={this.props.currentUser.userPictureUrl}
+          className="img-circle comment-input-image" />
         </div>
-        <div className="pull-left comment-input-form">
-          <form onSubmit={this.handleSubmit}>
-            <div>
+        <div className="col-sm-9">
+          <form className="comment-input-form">
+            <div className="input-group">
               <input
-                ref={(input) => this.textInput = input}
                 type="text"
+                ref={(input) => this.textInput = input}
+                className="form-control"
                 placeholder="Write your comment here..."
                 value={this.state.commentText}
                 onChange={this.handleChange}
-              />
-              <span><i className="fa fa-caret-right" aria-hidden="true"></i></span>
+                aria-describedby="basic-addon2" />
+              <span className="input-group-addon" id="basic-addon2">
+                <i className="fa fa-caret-right" aria-hidden="true"></i>
+              </span>
             </div>
           </form>
         </div>
@@ -66,6 +70,12 @@ class CommentInput extends Component {
     );
   }
 }
+
+
+
+
+
+
 
 const mapStateToProps = (state) => {
   return {

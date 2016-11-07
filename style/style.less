@@ -81,7 +81,7 @@
 
 /* Section Headline */
 .section-headline {
-  margin-top: 60px;
+  margin-top: 40px;
   .section-headline-decoration {
     border-left: solid #ef0d33 3px;
     height: 80px;
@@ -167,6 +167,7 @@ section#about-us .big-headline {
   padding: 20px;
   position: relative;
   z-index: 50;
+  margin-bottom: 60px;
   .feature {
     .feature-icon {
       margin-bottom: 60px;
@@ -242,38 +243,43 @@ section#how-it-works .car-image-wrapper {
   img {
     position: relative;
     z-index: -1;
-    bottom: 60px;
+    bottom: 80px;
+    right: 80px;
   }
 }
 
 /*** END HOW IT WORKS SECTION ***/
 
 /* COOMMENTS SECTION */
-.comment-input-panel {
-  box-shadow: lightgray 0px 10px 15px 5px;
-  padding: 20px;
-  margin: 40px 0;
+
+.comment-input-wrapper {
   .comment-input-form {
-    margin-left: 20px;
-    width: 80%;
+    border-bottom: 2px solid lightgray;
     input {
       #content;
+      color: gray;
       border: none;
-      border-bottom: solid lightgray 2px;
-      padding-bottom: 10px;
-      width: 80%;
+      box-shadow: none;
       &:focus {
         outline: none;
       }
     }
     span {
-      font-size: 24px;
-      color: lightgray;
+      background-color: #fff;
+      border: none;
+      font-size: 40px;
     }
   }
   .comment-input-image {
     margin-left: 40px;
   }
+}
+
+
+.comment-input-panel {
+  box-shadow: lightgray 0px 10px 15px 5px;
+  padding: 15px;
+  margin: 40px 0;
 }
 
 .comment-list-wrapper {
