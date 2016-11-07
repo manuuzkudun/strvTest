@@ -1,0 +1,313 @@
+/*** Generic Components ***/
+/* Buttons */
+.main-button-wrapper {
+  text-align: center;
+  margin: 60px 0;
+}
+
+.main-button {
+  background-color: #ef0d33;
+  border: none;
+  border-radius: 0;
+  padding: 15px 10px;
+}
+
+.main-button:hover {
+  background-color: #ef0d33;
+}
+
+.main-button:active {
+  background-color: #ef0d33;
+}
+
+.main-button a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.main-button span {
+  margin-left: 40px;
+}
+
+/* End Buttons */
+
+/* Panels */
+.panel {
+  box-shadow: lightgray 0px 10px 15px 5px;
+  padding: 40px;
+}
+/* End Panels */
+
+/* Section Headline */
+.section-headline {
+  margin: 60px 0;
+}
+.section-headline h2 {
+  text-transform: uppercase;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.section-headline h2>span{
+  color: lightgray;
+  display: block;
+}
+
+.section-headline .section-headline-decoration {
+  border-left: solid #ef0d33 3px;
+  height: 80px;
+}
+/* End Section Headline */
+
+/* Big headline */
+.big-headline {
+  font-size: 180px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: lightgray;
+}
+/* Big headline */
+
+/*** End Generic components ***/
+/*** HEADER ***/
+
+/* Main Navigation */
+.navbar .navbar-nav {
+  margin-top: 40px;
+  display: inline-block;
+  float: none;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.main-nav {
+  background-color: inherit;
+  border: none;
+}
+
+#myNavbar li>a {
+  color: lightgray !important;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 5px 15px;
+  border-bottom: transparent solid 2px;
+}
+
+#myNavbar li>a:hover {
+  color: white !important;
+  border-bottom: #ef0d33 solid 2px;
+}
+
+/* End Main Navigation */
+
+/* Main headline */
+.main-headline {
+  text-align: center;
+  margin-top: 240px;
+}
+
+.main-headline h1 {
+  font-size: 72px;
+  font-weight: bold;
+}
+
+.main-headline span {
+  display: block;
+  font-size: 26px;
+}
+/* End Main headline */
+
+/*** END HEADER ***/
+
+/*** ABOUT US SECTION ***/
+/* Features */
+.feature {
+}
+.feature-icon {
+  margin-bottom: 60px;
+}
+
+.feature-icon i {
+  font-size: 48px;
+  color: lightgray;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+
+.feature-content {
+  padding: 0 40px;
+}
+
+.feature-content > h3 {
+  margin: 20px 0;
+}
+
+.feature-content > p {
+  color: lightgray;
+  font-size: 16px;
+}
+
+.feature:nth-of-type(2) .feature-content{
+  border-left: solid lightgray 2px;
+  border-right: solid lightgray 2px;
+
+}
+
+/*** END ABOUT US SECTION ***/
+/*** HOW IT WORKS SECTION ***/
+/* How it works section */
+.instruction {
+  padding: 0 60px;
+}
+
+.instructions h3 {
+  color: red;
+  font-size: 128px;
+  color: lightgray;
+  font-weight: bold;
+}
+
+.instructions h3 span{
+  display: block;
+  font-size: 26px;
+  color:black;
+  z-index: 100;
+  position: absolute;
+  top: 80px;
+}
+
+.instruction:nth-of-type(2) {
+  border-left: solid lightgray 2px;
+  border-right: solid lightgray 2px;
+}
+
+#how-it-works-big-headline {
+  z-index: 100;
+  position: relative;
+  top: 160px;
+  text-align: center;
+}
+/*** END HOW IT WORKS SECTION ***/
+
+.center {
+  text-align: center;
+}
+
+
+
+#main-header {
+  background: url("../img/car-header.jpg") center center no-repeat;
+background-size: cover;
+}
+
+#main-footer {
+  background: url("../img/car-header.jpg") center center no-repeat;
+background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Comment */
+.comment-input-form input{
+  font-size: 16px;
+  color: gray;
+}
+.comment-list-wrapper {
+  margin: 0 60px;
+}
+.comments-quantity {
+  font-size: 26px;
+  color: gray;
+}
+.comment-input-panel {
+  box-shadow: lightgray 0px 10px 15px 5px;
+  padding: 20px;
+  margin: 40px 0;
+}
+
+.comment {
+  box-shadow: lightgray 0px 10px 15px 5px;
+  margin: 20px 0;
+  padding: 20px;
+  border-left: solid #fff 2px;
+}
+
+.comment:hover {
+  border-left: solid #ef0d33 2px;
+}
+
+.comment-heading {
+  display: block;
+}
+.comment-content {
+  display: block;
+  color: gray;
+  margin: 20px 0;
+  font-size: 16px;
+}
+
+.comment-user-image {
+
+}
+
+.comment-meta {
+  margin-left: 20px;
+}
+
+.comment-meta-username {
+  font-size: 20px;
+}
+.comment-meta-date{
+  color: lightgray;
+}
+
+/* reapeated!!! */
+.comment-input {
+  box-shadow: lightgray 0px 10px 15px 5px;
+  margin: 20px 0;
+  padding: 20px;
+}
+.comment-input-image {
+  margin-left: 40px;
+}
+
+.comment-input-form {
+  margin-left: 20px;
+  width: 80%;
+}
+
+.comment-input-form input{
+  border: none;
+  border-bottom: solid lightgray 2px;
+  width: 80%;
+  padding-bottom: 10px;
+}
+
+.comment-input-form input:focus{
+  outline: none;
+}
+
+.comment-input-form span {
+  font-size: 24px;
+  color: lightgray;
+}
+
+
+
+
+/*** END COMMENTS SECTION ***/
+
+/*** FOOTER ***/
