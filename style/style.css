@@ -23,7 +23,9 @@
 /*** END GENERIC STYLES ***/
 /*** HEADER STYLES ***/
 #main-header {
-  background: url("../img/car-header.jpg") center center no-repeat;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/car-header.jpg');
+  background-position: center center;
   background-size: cover;
 }
 /* Main Navigation */
@@ -309,7 +311,9 @@ section#how-it-works .car-image-wrapper img {
 /*** END COMMENTS SECTION ***/
 /*** FOOTER ***/
 footer {
-  background: url("../img/car-footer.jpg") center center no-repeat;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/car-footer.jpg');
+  background-position: center center;
   background-size: cover;
 }
 footer .main-headline {
