@@ -22,6 +22,10 @@
 /* End Section Headline */
 /*** END GENERIC STYLES ***/
 /*** HEADER STYLES ***/
+#main-header {
+  background: url("../img/car-header.jpg") center center no-repeat;
+  background-size: cover;
+}
 /* Main Navigation */
 .main-nav {
   background-color: inherit;
@@ -304,20 +308,49 @@ section#how-it-works .car-image-wrapper img {
 }
 /*** END COMMENTS SECTION ***/
 /*** FOOTER ***/
-.center {
+footer {
+  background: url("../img/car-footer.jpg") center center no-repeat;
+  background-size: cover;
+}
+footer .main-headline {
   text-align: center;
+  margin-top: 280px;
+  padding-top: 300px;
+  color: #fff;
 }
-/* Panels */
-.panel {
-  box-shadow: lightgray 0px 10px 15px 5px;
-  padding: 40px;
+footer .main-headline h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 90px;
+  font-weight: bold;
 }
-/* End Panels */
-#main-header {
-  background: url("../img/car-header.jpg") center center no-repeat;
-  background-size: cover;
+footer .main-headline span {
+  font-family: 'Merriweather', serif;
+  font-size: 21px;
+  font-weight: 400;
+  display: block;
 }
-#main-footer {
-  background: url("../img/car-header.jpg") center center no-repeat;
-  background-size: cover;
+footer .main-button-wrapper {
+  text-align: center;
+  margin: 60px 0;
+}
+footer .main-button-wrapper .main-button {
+  background-color: #e43b40;
+  border: none;
+  border-radius: 0;
+  padding: 15px;
+}
+footer .main-button-wrapper .main-button:hover,
+footer .main-button-wrapper .main-button:active {
+  background-color: #ea686c;
+}
+footer .main-button-wrapper .main-button a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+footer .main-button-wrapper .main-button span {
+  margin-left: 40px;
 }
