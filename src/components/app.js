@@ -14,9 +14,7 @@ class App extends Component {
           <div className="comments-quantity">
             {this.props.allComments.length} Comments
           </div>
-          <div>
-            <CommentList comments={this.props.parentComments} />
-          </div>
+          <CommentList comments={this.props.parentComments} />
         </div>
       </div>
     );

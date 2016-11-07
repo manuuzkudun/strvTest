@@ -31,10 +31,9 @@ class Comment extends Component {
   render() {
     const comments = this.props.comments
       .filter(comment => comment.parentComment === this.props.id);
-    const style = typeof(this.props.parentComment) === 'number' ? {marginLeft: '40px'} : null;
     return(
-      <div>
-        <div className="comment" style={style}>
+      <div className="comment-wrapper">
+        <div className="comment">
           <div className="comment-heading clearfix">
             <div className="pull-left comment-user-image">
               <img className="img-circle" src={this.props.user.userPictureUrl} />
@@ -50,7 +49,10 @@ class Comment extends Component {
           </div>
           {this.props.answerComment === this.props.id ? <CommentInput parentComment={this.props.id}/> : null}
         </div>
-        <CommentList comments={comments} />
+        <CommentList
+          comments={comments}
+          commentAnswers={true}
+          />
       </div>
 
     );

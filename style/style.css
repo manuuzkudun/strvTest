@@ -24,6 +24,7 @@
 /*** HEADER STYLES ***/
 #main-header {
   width: 100%;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 30% 100%, 0 80%, 0 25%);
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/car-header.jpg');
   background-position: center center;
   background-size: cover;
@@ -54,8 +55,13 @@
 /* Header Main headline */
 header .main-headline {
   text-align: center;
-  margin-top: 280px;
+  margin-top: 60px;
   color: #fff;
+}
+@media screen and (min-width: 768px) {
+  header .main-headline {
+    margin-top: 280px;
+  }
 }
 header .main-headline h1 {
   font-family: 'Roboto', sans-serif;
@@ -106,7 +112,14 @@ header .big-headline {
   color: lightgray;
   opacity: 0.5;
   margin-left: 60px;
-  margin-top: 100px;
+  margin-top: 60px;
+  padding-bottom: 60px;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  header .big-headline {
+    display: block;
+  }
 }
 /* End Header big-headline */
 /*** END HEADER ***/
@@ -131,7 +144,7 @@ section#about-us .big-headline {
   margin-bottom: 60px;
 }
 .features-panel .feature .feature-icon {
-  margin-bottom: 60px;
+  margin: 60px 0;
 }
 .features-panel .feature .feature-icon i {
   font-size: 48px;
@@ -142,6 +155,7 @@ section#about-us .big-headline {
 }
 .features-panel .feature .feature-content {
   padding: 0 40px;
+  margin-bottom: 60px;
 }
 .features-panel .feature .feature-content h3 {
   font-family: 'Roboto', sans-serif;
@@ -155,9 +169,21 @@ section#about-us .big-headline {
   font-size: 15px;
   font-weight: 400;
 }
-.features-panel .feature:nth-of-type(2) .feature-content {
-  border-left: solid lightgray 2px;
-  border-right: solid lightgray 2px;
+.features-panel .feature:nth-of-type(2) {
+  border-top: solid lightgray 2px;
+  border-bottom: solid lightgray 2px;
+}
+@media screen and (min-width: 768px) {
+  .features-panel .feature:nth-of-type(2) {
+    border-top: none;
+    border-bottom: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .features-panel .feature:nth-of-type(2) .feature-content {
+    border-left: solid lightgray 2px;
+    border-right: solid lightgray 2px;
+  }
 }
 /*** END ABOUT US SECTION ***/
 /*** HOW IT WORKS SECTION ***/
@@ -165,9 +191,11 @@ section#about-us .big-headline {
   margin-top: 60px;
 }
 .instructions .instruction {
-  padding: 0 60px;
+  padding: 20px 60px;
+  margin: 0 auto;
 }
 .instructions .instruction h3 {
+  text-align: center;
   font-size: 120px;
   font-weight: bold;
   color: lightgray;
@@ -184,8 +212,16 @@ section#about-us .big-headline {
   bottom: 20px;
 }
 .instructions .instruction:nth-of-type(2) {
-  border-left: solid lightgray 2px;
-  border-right: solid lightgray 2px;
+  border-top: solid lightgray 2px;
+  border-bottom: solid lightgray 2px;
+}
+@media screen and (min-width: 768px) {
+  .instructions .instruction:nth-of-type(2) {
+    border-top: none;
+    border-bottom: none;
+    border-left: solid lightgray 2px;
+    border-right: solid lightgray 2px;
+  }
 }
 section#how-it-works .main-button-wrapper {
   text-align: center;
@@ -213,7 +249,13 @@ section#how-it-works .main-button-wrapper .main-button span {
   margin-left: 40px;
 }
 section#how-it-works .car-image-wrapper {
+  display: none;
   margin-top: 120px;
+}
+@media screen and (min-width: 768px) {
+  section#how-it-works .car-image-wrapper {
+    display: block;
+  }
 }
 section#how-it-works .car-image-wrapper .big-headline {
   font-family: 'Roboto', sans-serif;
@@ -264,37 +306,44 @@ section#how-it-works .car-image-wrapper img {
   padding: 15px;
   margin: 40px 0;
 }
-.comment-list-wrapper {
-  margin: 0 60px;
+@media screen and (min-width: 768px) {
+  .comment-list-wrapper {
+    margin: 0 60px;
+  }
 }
 .comment-list-wrapper .comments-quantity {
   font-size: 26px;
   color: gray;
 }
-.comment-list-wrapper .comment {
+@media screen and (min-width: 768px) {
+  .comment-list-wrapper .comment-wrapper .comment-answers {
+    margin-left: 40px;
+  }
+}
+.comment-list-wrapper .comment-wrapper .comment {
   box-shadow: lightgray 0px 10px 15px 5px;
   margin: 20px 0;
   padding: 20px;
   border-left: solid #fff 2px;
 }
-.comment-list-wrapper .comment:hover {
-  border-left: solid #ef0d33 2px;
+.comment-list-wrapper .comment-wrapper .comment:hover {
+  border-left: solid #e43b40 2px;
 }
-.comment-list-wrapper .comment .comment-heading {
+.comment-list-wrapper .comment-wrapper .comment .comment-heading {
   display: block;
 }
-.comment-list-wrapper .comment .comment-heading .comment-meta {
+.comment-list-wrapper .comment-wrapper .comment .comment-heading .comment-meta {
   margin-left: 20px;
 }
-.comment-list-wrapper .comment .comment-heading .comment-meta .comment-meta-username {
+.comment-list-wrapper .comment-wrapper .comment .comment-heading .comment-meta .comment-meta-username {
   font-family: 'Roboto', sans-serif;
   font-size: 26px;
   font-weight: 300;
 }
-.comment-list-wrapper .comment .comment-heading .comment-meta .comment-meta-date {
+.comment-list-wrapper .comment-wrapper .comment .comment-heading .comment-meta .comment-meta-date {
   color: lightgray;
 }
-.comment-list-wrapper .comment .comment-content {
+.comment-list-wrapper .comment-wrapper .comment .comment-content {
   display: block;
   margin: 20px 0;
   color: gray;
@@ -302,16 +351,17 @@ section#how-it-works .car-image-wrapper img {
   font-size: 15px;
   font-weight: 400;
 }
-.comment-list-wrapper .reply-button {
+.comment-list-wrapper .comment-wrapper .comment .reply-button {
   color: gray;
 }
-.comment-list-wrapper .reply-button:hover {
+.comment-list-wrapper .comment-wrapper .comment .reply-button:hover {
   color: #e43b40;
 }
 /*** END COMMENTS SECTION ***/
 /*** FOOTER ***/
 footer {
   width: 100%;
+  -webkit-clip-path: polygon(0 0, 30% 20%, 100% 0, 100% 100%, 0 100%, 0 25%);
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/car-footer.jpg');
   background-position: center center;
   background-size: cover;
