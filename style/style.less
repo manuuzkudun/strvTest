@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather|Roboto:300,500,700');
-
+@myred: #e43b40;
 
 /*** GENERIC STYLES ***/
 /* Headlines */
 
 #big-headline() {
   font-family: 'Roboto', sans-serif;
-  font-size: 180px;
+  font-size: 20rem;
+  line-height: 100px;
   text-transform: uppercase;
   font-weight: bold;
   color: lightgray;
+  opacity: 0.5;
 }
 
 #main-headline() {
@@ -53,22 +55,24 @@
   font-family: 'Merriweather', serif;
   font-size: 15px;
   font-weight: 400;
-  color: lightgray;
 }
 
+
 #main-button() {
-  background-color: #ef0d33;
+  background-color: @myred;
   border: none;
   border-radius: 0;
-  padding: 15px 10px;
+  padding: 15px;
   &:hover, &:active {
-    background-color: #ef0d33;
+    background-color: lighten(@myred, 10%);
   }
   a {
     color: white;
     text-transform: uppercase;
     text-decoration: none;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
+    font-weight: bold;
   }
   span {
     margin-left: 40px;
@@ -77,7 +81,7 @@
 
 /* Section Headline */
 .section-headline {
-  margin: 60px 0;
+  margin-top: 60px;
   .section-headline-decoration {
     border-left: solid #ef0d33 3px;
     height: 80px;
@@ -122,7 +126,8 @@
 /* Header Main headline */
 header .main-headline {
   text-align: center;
-  margin-top: 240px;
+  margin-top: 280px;
+  color: #fff;
   h1 {
     #main-headline
   }
@@ -135,7 +140,7 @@ header .main-headline {
 /* Header main-button */
 header .main-button-wrapper {
   text-align: center;
-  margin: 60px 0;
+  margin-top: 60px;
   .main-button {
     #main-button
   }
@@ -143,41 +148,52 @@ header .main-button-wrapper {
 /* End Header main-button */
 /* Header big-headline */
 header .big-headline {
-  #big-headline
+  #big-headline;
+  margin-left: 60px;
+  margin-top: 100px;
 }
 /* End Header big-headline */
 /*** END HEADER ***/
 
 /*** ABOUT US SECTION ***/
 section#about-us .big-headline {
-  #big-headline
+  #big-headline;
+  position: relative;
+  right: 10px;
+  text-align: center;
 }
-
-.feature {
-  .feature-icon {
-    margin-bottom: 60px;
-    i {
-      font-size: 48px;
-      color: lightgray;
-      width: 100%;
-      display: inline-block;
-      text-align: center;
+.features-panel {
+  box-shadow: lightgray 0px 10px 15px 5px;
+  padding: 20px;
+  position: relative;
+  z-index: 50;
+  .feature {
+    .feature-icon {
+      margin-bottom: 60px;
+      i {
+        font-size: 48px;
+        color: lightgray;
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+      }
     }
-  }
-  .feature-content {
-    padding: 0 40px;
-    h3 {
-      margin: 20px 0;
-    }
-    & > p {
-      color: lightgray;
-      font-size: 16px;
-    }
-  }
-  &:nth-of-type(2) {
     .feature-content {
-      border-left: solid lightgray 2px;
-      border-right: solid lightgray 2px;
+      padding: 0 40px;
+      h3 {
+        #small-headline;
+        margin: 20px 0;
+      }
+      & > p {
+        color: lightgray;
+        #content;
+      }
+    }
+    &:nth-of-type(2) {
+      .feature-content {
+        border-left: solid lightgray 2px;
+        border-right: solid lightgray 2px;
+      }
     }
   }
 }
@@ -185,26 +201,28 @@ section#about-us .big-headline {
 /*** END ABOUT US SECTION ***/
 
 /*** HOW IT WORKS SECTION ***/
-
-.instruction {
-  padding: 0 60px;
-  h3 {
-    color: red;
-    font-size: 128px;
-    color: lightgray;
-    font-weight: bold;
-    span {
-      display: block;
-      font-size: 26px;
-      color:black;
-      z-index: 100;
-      position: absolute;
-      top: 80px;
+.instructions {
+  margin-top: 60px;
+  .instruction {
+    padding: 0 60px;
+    h3 {
+      font-size: 120px;
+      font-weight:bold;
+      color: lightgray;
+      line-height: 30px;
+      span {
+        display: block;
+        #small-headline;
+        color:initial;
+        z-index: 5;
+        position: relative;
+        bottom: 20px;
+      }
     }
-  }
-  &:nth-of-type(2) {
-    border-left: solid lightgray 2px;
-    border-right: solid lightgray 2px;
+    &:nth-of-type(2) {
+      border-left: solid lightgray 2px;
+      border-right: solid lightgray 2px;
+    }
   }
 }
 
@@ -216,12 +234,16 @@ section#how-it-works .main-button-wrapper {
   }
 }
 
-section#about-us .big-headline {
-  #big-headline;
-  z-index: 100;
-  position: relative;
-  top: 160px;
-  text-align: center;
+section#how-it-works .car-image-wrapper {
+  margin-top: 120px;
+  .big-headline {
+    #big-headline;
+  }
+  img {
+    position: relative;
+    z-index: -1;
+    bottom: 60px;
+  }
 }
 
 /*** END HOW IT WORKS SECTION ***/

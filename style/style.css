@@ -3,7 +3,7 @@
 /* Headlines */
 /* Section Headline */
 .section-headline {
-  margin: 60px 0;
+  margin-top: 60px;
 }
 .section-headline .section-headline-decoration {
   border-left: solid #ef0d33 3px;
@@ -48,7 +48,8 @@
 /* Header Main headline */
 header .main-headline {
   text-align: center;
-  margin-top: 240px;
+  margin-top: 280px;
+  color: #fff;
 }
 header .main-headline h1 {
   font-family: 'Roboto', sans-serif;
@@ -65,23 +66,25 @@ header .main-headline span {
 /* Header main-button */
 header .main-button-wrapper {
   text-align: center;
-  margin: 60px 0;
+  margin-top: 60px;
 }
 header .main-button-wrapper .main-button {
-  background-color: #ef0d33;
+  background-color: #e43b40;
   border: none;
   border-radius: 0;
-  padding: 15px 10px;
+  padding: 15px;
 }
 header .main-button-wrapper .main-button:hover,
 header .main-button-wrapper .main-button:active {
-  background-color: #ef0d33;
+  background-color: #ea686c;
 }
 header .main-button-wrapper .main-button a {
   color: white;
   text-transform: uppercase;
   text-decoration: none;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
+  font-weight: bold;
 }
 header .main-button-wrapper .main-button span {
   margin-left: 40px;
@@ -90,65 +93,90 @@ header .main-button-wrapper .main-button span {
 /* Header big-headline */
 header .big-headline {
   font-family: 'Roboto', sans-serif;
-  font-size: 180px;
+  font-size: 20rem;
+  line-height: 100px;
   text-transform: uppercase;
   font-weight: bold;
   color: lightgray;
+  opacity: 0.5;
+  margin-left: 60px;
+  margin-top: 100px;
 }
 /* End Header big-headline */
 /*** END HEADER ***/
 /*** ABOUT US SECTION ***/
 section#about-us .big-headline {
   font-family: 'Roboto', sans-serif;
-  font-size: 180px;
+  font-size: 20rem;
+  line-height: 100px;
   text-transform: uppercase;
   font-weight: bold;
   color: lightgray;
+  opacity: 0.5;
+  position: relative;
+  right: 10px;
+  text-align: center;
 }
-.feature .feature-icon {
+.features-panel {
+  box-shadow: lightgray 0px 10px 15px 5px;
+  padding: 20px;
+  position: relative;
+  z-index: 50;
+}
+.features-panel .feature .feature-icon {
   margin-bottom: 60px;
 }
-.feature .feature-icon i {
+.features-panel .feature .feature-icon i {
   font-size: 48px;
   color: lightgray;
   width: 100%;
   display: inline-block;
   text-align: center;
 }
-.feature .feature-content {
+.features-panel .feature .feature-content {
   padding: 0 40px;
 }
-.feature .feature-content h3 {
+.features-panel .feature .feature-content h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 26px;
+  font-weight: 500;
   margin: 20px 0;
 }
-.feature .feature-content > p {
+.features-panel .feature .feature-content > p {
   color: lightgray;
-  font-size: 16px;
+  font-family: 'Merriweather', serif;
+  font-size: 15px;
+  font-weight: 400;
 }
-.feature:nth-of-type(2) .feature-content {
+.features-panel .feature:nth-of-type(2) .feature-content {
   border-left: solid lightgray 2px;
   border-right: solid lightgray 2px;
 }
 /*** END ABOUT US SECTION ***/
 /*** HOW IT WORKS SECTION ***/
-.instruction {
+.instructions {
+  margin-top: 60px;
+}
+.instructions .instruction {
   padding: 0 60px;
 }
-.instruction h3 {
-  color: red;
-  font-size: 128px;
-  color: lightgray;
+.instructions .instruction h3 {
+  font-size: 120px;
   font-weight: bold;
+  color: lightgray;
+  line-height: 30px;
 }
-.instruction h3 span {
+.instructions .instruction h3 span {
   display: block;
+  font-family: 'Roboto', sans-serif;
   font-size: 26px;
-  color: black;
-  z-index: 100;
-  position: absolute;
-  top: 80px;
+  font-weight: 500;
+  color: initial;
+  z-index: 5;
+  position: relative;
+  bottom: 20px;
 }
-.instruction:nth-of-type(2) {
+.instructions .instruction:nth-of-type(2) {
   border-left: solid lightgray 2px;
   border-right: solid lightgray 2px;
 }
@@ -157,34 +185,42 @@ section#how-it-works .main-button-wrapper {
   margin: 60px 0;
 }
 section#how-it-works .main-button-wrapper .main-button {
-  background-color: #ef0d33;
+  background-color: #e43b40;
   border: none;
   border-radius: 0;
-  padding: 15px 10px;
+  padding: 15px;
 }
 section#how-it-works .main-button-wrapper .main-button:hover,
 section#how-it-works .main-button-wrapper .main-button:active {
-  background-color: #ef0d33;
+  background-color: #ea686c;
 }
 section#how-it-works .main-button-wrapper .main-button a {
   color: white;
   text-transform: uppercase;
   text-decoration: none;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
+  font-weight: bold;
 }
 section#how-it-works .main-button-wrapper .main-button span {
   margin-left: 40px;
 }
-section#about-us .big-headline {
+section#how-it-works .car-image-wrapper {
+  margin-top: 120px;
+}
+section#how-it-works .car-image-wrapper .big-headline {
   font-family: 'Roboto', sans-serif;
-  font-size: 180px;
+  font-size: 20rem;
+  line-height: 100px;
   text-transform: uppercase;
   font-weight: bold;
   color: lightgray;
-  z-index: 100;
+  opacity: 0.5;
+}
+section#how-it-works .car-image-wrapper img {
   position: relative;
-  top: 160px;
-  text-align: center;
+  z-index: -1;
+  bottom: 60px;
 }
 /*** END HOW IT WORKS SECTION ***/
 /* COOMMENTS SECTION */
@@ -201,7 +237,6 @@ section#about-us .big-headline {
   font-family: 'Merriweather', serif;
   font-size: 15px;
   font-weight: 400;
-  color: lightgray;
   border: none;
   border-bottom: solid lightgray 2px;
   padding-bottom: 10px;
@@ -253,7 +288,6 @@ section#about-us .big-headline {
   font-family: 'Merriweather', serif;
   font-size: 15px;
   font-weight: 400;
-  color: lightgray;
 }
 /*** END COMMENTS SECTION ***/
 /*** FOOTER ***/
