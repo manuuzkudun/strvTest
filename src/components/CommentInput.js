@@ -50,7 +50,9 @@ class CommentInput extends Component {
           className="img-circle comment-input-image" />
         </div>
         <div className="col-sm-9">
-          <form className="comment-input-form">
+          <form
+            onSubmit={this.handleSubmit}
+            className="comment-input-form">
             <div className="input-group">
               <input
                 type="text"
@@ -60,7 +62,7 @@ class CommentInput extends Component {
                 value={this.state.commentText}
                 onChange={this.handleChange}
                 aria-describedby="basic-addon2" />
-              <span className="input-group-addon" id="basic-addon2">
+              <span className="input-group-addon" id="basic-addon2" onClick={this.handleSubmit}>
                 <i className="fa fa-caret-right" aria-hidden="true"></i>
               </span>
             </div>

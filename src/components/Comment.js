@@ -19,7 +19,7 @@ class Comment extends Component {
   renderReplyButton() {
     if ( this.props.parentComment === null ) {
       return (
-        <div onClick={this.handleClick} className="pull-right">
+        <div onClick={this.handleClick} className="pull-right reply-button">
           <i className="fa fa-reply" aria-hidden="true"></i>
         </div>
       );

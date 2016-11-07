@@ -233,6 +233,8 @@ section#how-it-works .car-image-wrapper img {
   font-family: 'Merriweather', serif;
   font-size: 15px;
   font-weight: 400;
+  position: relative;
+  top: 15px;
   color: gray;
   border: none;
   box-shadow: none;
@@ -244,6 +246,9 @@ section#how-it-works .car-image-wrapper img {
   background-color: #fff;
   border: none;
   font-size: 40px;
+}
+.comment-input-wrapper .comment-input-form span:hover {
+  color: #e43b40;
 }
 .comment-input-wrapper .comment-input-image {
   margin-left: 40px;
@@ -286,9 +291,16 @@ section#how-it-works .car-image-wrapper img {
 .comment-list-wrapper .comment .comment-content {
   display: block;
   margin: 20px 0;
+  color: gray;
   font-family: 'Merriweather', serif;
   font-size: 15px;
   font-weight: 400;
+}
+.comment-list-wrapper .reply-button {
+  color: gray;
+}
+.comment-list-wrapper .reply-button:hover {
+  color: #e43b40;
 }
 /*** END COMMENTS SECTION ***/
 /*** FOOTER ***/
