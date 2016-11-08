@@ -374,10 +374,13 @@ section#how-it-works .car-image-wrapper {
 .comment-input-wrapper {
   .comment-input-form {
     border-bottom: 2px solid lightgray;
+    margin: 0 20px;
+    @media screen and (min-width: 768px) {
+      margin:0;
+      padding-top: 15px;
+    }
     input {
       #content;
-      position:relative;
-      top:15px;
       color: gray;
       border: none;
       box-shadow: none;
@@ -386,24 +389,22 @@ section#how-it-works .car-image-wrapper {
           color: @myred;
         }
       }
-      &:focus {
-        outline: none;
-      }
-    }
-    span {
-      background-color: #fff;
-      border: none;
-      font-size: 40px;
-      &:hover {
-        color: @myred;
-      }
-      i.error-icon {
-        color: @myred;
-      }
     }
   }
   .comment-input-image {
-    margin-left: 40px;
+    text-align: center;
+    padding: 10px 0;
+  }
+  .comment-send-icon {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 40px;
+    &:hover {
+      color: @myred;
+    }
+    i.error-icon {
+      color: @myred;
+    }
   }
 }
 

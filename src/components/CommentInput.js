@@ -49,16 +49,14 @@ class CommentInput extends Component {
 
   render() {
     return(
-      <div className="row comment-input-wrapper">
-        <div className="col-sm-2">
-          <img src={this.props.currentUser.userPictureUrl}
-          className="img-circle comment-input-image" />
-        </div>
-        <div className="col-sm-9">
-          <form
-            onSubmit={this.handleSubmit}
-            className="comment-input-form">
-            <div className="input-group">
+      <div className="comment-input-wrapper">
+        <form onSubmit={this.handleSubmit}>
+          <div className="row">
+            <div className="col-sm-2 comment-input-image">
+              <img src={this.props.currentUser.userPictureUrl}
+              className="img-circle" />
+            </div>
+            <div className="col-sm-8 comment-input-form">
               <input
                 type="text"
                 ref={(input) => this.textInput = input}
@@ -67,16 +65,18 @@ class CommentInput extends Component {
                 value={this.state.commentText}
                 onChange={this.handleChange}
                 aria-describedby="basic-addon2" />
-              <span className="input-group-addon" id="basic-addon2" onClick={this.handleSubmit}>
-                <i
-                  className="fa fa-caret-right"
-                  aria-hidden="true"
-                  ref={(input) => this.inputIcon = input} >
-                </i>
-              </span>
             </div>
-          </form>
-        </div>
+            <div
+              className="col-sm-2 comment-send-icon"
+              onClick={this.handleSubmit}>
+              <i
+                className="fa fa-caret-right"
+                aria-hidden="true"
+                ref={(input) => this.inputIcon = input} >
+              </i>
+            </div>
+          </div>
+        </form>
       </div>
     );
   }
