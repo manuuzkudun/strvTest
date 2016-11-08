@@ -25,7 +25,7 @@
 /*** HEADER STYLES ***/
 #main-header {
   width: 100%;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 30% 100%, 0 80%, 0 25%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 30% 100%, 0 90%, 0 25%);
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/car-header.jpg');
   background-position: center center;
   background-size: cover;
@@ -57,6 +57,7 @@
 header .main-headline {
   text-align: center;
   margin-top: 60px;
+  padding: 0 80px;
   color: #fff;
 }
 @media screen and (min-width: 768px) {
@@ -66,8 +67,13 @@ header .main-headline {
 }
 header .main-headline h1 {
   font-family: 'Roboto', sans-serif;
-  font-size: 90px;
+  font-size: 70px;
   font-weight: bold;
+}
+@media screen and (min-width: 768px) {
+  header .main-headline h1 {
+    font-size: 90px;
+  }
 }
 header .main-headline span {
   font-family: 'Merriweather', serif;
@@ -380,21 +386,27 @@ section#how-it-works .car-image-wrapper img {
 /*** FOOTER ***/
 footer {
   width: 100%;
-  -webkit-clip-path: polygon(0 0, 30% 20%, 100% 0, 100% 100%, 0 100%, 0 25%);
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/car-footer.jpg');
+  -webkit-clip-path: polygon(0 0, 30% 10%, 100% 0, 100% 100%, 0 100%, 0 25%);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/car-footer2.jpg');
   background-position: center center;
   background-size: cover;
 }
 footer .main-headline {
   text-align: center;
-  margin-top: 280px;
-  padding-top: 300px;
+  margin-top: 100px;
+  padding: 0 80px;
+  padding-top: 200px;
   color: #fff;
 }
 footer .main-headline h1 {
   font-family: 'Roboto', sans-serif;
-  font-size: 90px;
+  font-size: 70px;
   font-weight: bold;
+}
+@media screen and (min-width: 768px) {
+  footer .main-headline h1 {
+    font-size: 90px;
+  }
 }
 footer .main-headline span {
   font-family: 'Merriweather', serif;
@@ -453,18 +465,3 @@ footer .social-media a:nth-of-type(1) {
 footer .social-media a:nth-of-type(2) {
   padding: 5px 6px;
 }
-/*
-
-span {
-  background-color: #fff;
-  width: 30px;
-  height: 30px;
-  padding: 5px;
-  border-radius: 50%;
-  &.social-media-text {
-    color:#fff;
-  }
-}
-
-
-*/

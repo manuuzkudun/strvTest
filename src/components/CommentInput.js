@@ -36,7 +36,7 @@ class CommentInput extends Component {
       this.textInput['placeholder'] = 'Write your comment here...';
       this.textInput['className'] = "form-control"
     } else {
-      this.textInput['placeholder'] = 'Ooh man! Just write your comment here';
+      this.textInput['placeholder'] = 'Please, write your comment here';
       this.textInput['className'] = "form-control input-error"
       this.inputIcon['className'] = "fa fa-exclamation-triangle error-icon";
       this.textInput.focus();
