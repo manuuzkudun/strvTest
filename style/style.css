@@ -4,6 +4,7 @@
 /* Section Headline */
 .section-headline {
   margin-top: 40px;
+  margin-left: 40px;
 }
 .section-headline .section-headline-decoration {
   border-left: solid #ef0d33 3px;
@@ -132,8 +133,6 @@ section#about-us .big-headline {
   font-weight: bold;
   color: lightgray;
   opacity: 0.5;
-  position: relative;
-  right: 10px;
   text-align: center;
 }
 .features-panel {
@@ -142,6 +141,15 @@ section#about-us .big-headline {
   position: relative;
   z-index: 50;
   margin-bottom: 60px;
+  background-color: white;
+}
+.features-panel .feature hr {
+  width: 80%;
+}
+@media screen and (min-width: 768px) {
+  .features-panel .feature hr {
+    display: none;
+  }
 }
 .features-panel .feature .feature-icon {
   margin: 60px 0;
@@ -154,8 +162,14 @@ section#about-us .big-headline {
   text-align: center;
 }
 .features-panel .feature .feature-content {
+  text-align: center;
   padding: 0 40px;
   margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .features-panel .feature .feature-content {
+    text-align: left;
+  }
 }
 .features-panel .feature .feature-content h3 {
   font-family: 'Roboto', sans-serif;
@@ -169,20 +183,10 @@ section#about-us .big-headline {
   font-size: 15px;
   font-weight: 400;
 }
-.features-panel .feature:nth-of-type(2) {
-  border-top: solid lightgray 2px;
-  border-bottom: solid lightgray 2px;
-}
-@media screen and (min-width: 768px) {
-  .features-panel .feature:nth-of-type(2) {
-    border-top: none;
-    border-bottom: none;
-  }
-}
 @media screen and (min-width: 768px) {
   .features-panel .feature:nth-of-type(2) .feature-content {
-    border-left: solid lightgray 2px;
-    border-right: solid lightgray 2px;
+    border-left: solid lightgray 1px;
+    border-right: solid lightgray 1px;
   }
 }
 /*** END ABOUT US SECTION ***/
@@ -191,8 +195,15 @@ section#about-us .big-headline {
   margin-top: 60px;
 }
 .instructions .instruction {
-  padding: 20px 60px;
-  margin: 0 auto;
+  padding: 0 60px;
+}
+.instructions .instruction hr {
+  width: 40%;
+}
+@media screen and (min-width: 768px) {
+  .instructions .instruction hr {
+    display: none;
+  }
 }
 .instructions .instruction h3 {
   text-align: center;
@@ -200,6 +211,12 @@ section#about-us .big-headline {
   font-weight: bold;
   color: lightgray;
   line-height: 30px;
+  margin-top: 60px;
+}
+@media screen and (min-width: 768px) {
+  .instructions .instruction h3 {
+    margin-top: 60px;
+  }
 }
 .instructions .instruction h3 span {
   display: block;
@@ -211,14 +228,8 @@ section#about-us .big-headline {
   position: relative;
   bottom: 20px;
 }
-.instructions .instruction:nth-of-type(2) {
-  border-top: solid lightgray 2px;
-  border-bottom: solid lightgray 2px;
-}
 @media screen and (min-width: 768px) {
   .instructions .instruction:nth-of-type(2) {
-    border-top: none;
-    border-bottom: none;
     border-left: solid lightgray 2px;
     border-right: solid lightgray 2px;
   }
@@ -265,12 +276,14 @@ section#how-it-works .car-image-wrapper .big-headline {
   font-weight: bold;
   color: lightgray;
   opacity: 0.5;
+  position: relative;
+  z-index: 100;
+  top: 80px;
+  left: 160px;
 }
 section#how-it-works .car-image-wrapper img {
-  position: relative;
-  z-index: -1;
-  bottom: 80px;
-  right: 80px;
+  display: block;
+  margin: auto;
 }
 /*** END HOW IT WORKS SECTION ***/
 /* COOMMENTS SECTION */
@@ -287,6 +300,9 @@ section#how-it-works .car-image-wrapper img {
   border: none;
   box-shadow: none;
 }
+.comment-input-wrapper .comment-input-form input.input-error::-webkit-input-placeholder {
+  color: #e43b40;
+}
 .comment-input-wrapper .comment-input-form input:focus {
   outline: none;
 }
@@ -296,6 +312,9 @@ section#how-it-works .car-image-wrapper img {
   font-size: 40px;
 }
 .comment-input-wrapper .comment-input-form span:hover {
+  color: #e43b40;
+}
+.comment-input-wrapper .comment-input-form span i.error-icon {
   color: #e43b40;
 }
 .comment-input-wrapper .comment-input-image {

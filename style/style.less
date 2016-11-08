@@ -82,6 +82,7 @@
 /* Section Headline */
 .section-headline {
   margin-top: 40px;
+  margin-left: 40px;
   .section-headline-decoration {
     border-left: solid #ef0d33 3px;
     height: 80px;
@@ -176,8 +177,6 @@ header .big-headline {
 /*** ABOUT US SECTION ***/
 section#about-us .big-headline {
   #big-headline;
-  position: relative;
-  right: 10px;
   text-align: center;
 }
 .features-panel {
@@ -186,7 +185,14 @@ section#about-us .big-headline {
   position: relative;
   z-index: 50;
   margin-bottom: 60px;
+  background-color: white;
   .feature {
+    hr {
+      width: 80%;
+      @media screen and (min-width: 768px) {
+        display: none;
+      }
+    }
     .feature-icon {
       margin: 60px 0;
       i {
@@ -198,6 +204,10 @@ section#about-us .big-headline {
       }
     }
     .feature-content {
+      text-align: center;
+      @media screen and (min-width: 768px) {
+        text-align: left;
+      }
       padding: 0 40px;
       margin-bottom: 60px;
       h3 {
@@ -210,16 +220,10 @@ section#about-us .big-headline {
       }
     }
     &:nth-of-type(2) {
-      border-top: solid lightgray 2px;
-      border-bottom: solid lightgray 2px;
-      @media screen and (min-width: 768px) {
-        border-top: none;
-        border-bottom: none;
-      }
       .feature-content {
         @media screen and (min-width: 768px) {
-          border-left: solid lightgray 2px;
-          border-right: solid lightgray 2px;
+          border-left: solid lightgray 1px;
+          border-right: solid lightgray 1px;
         }
       }
     }
@@ -232,14 +236,23 @@ section#about-us .big-headline {
 .instructions {
   margin-top: 60px;
   .instruction {
-    padding: 20px 60px;
-    margin: 0 auto;
+    padding: 0 60px;
+    hr {
+      width: 40%;
+      @media screen and (min-width: 768px) {
+        display: none;
+      }
+    }
     h3 {
       text-align: center;
       font-size: 120px;
       font-weight:bold;
       color: lightgray;
       line-height: 30px;
+      margin-top: 60px;
+      @media screen and (min-width: 768px) {
+        margin-top: 60px;
+      }
       span {
         display: block;
         #small-headline;
@@ -250,11 +263,7 @@ section#about-us .big-headline {
       }
     }
     &:nth-of-type(2) {
-      border-top: solid lightgray 2px;
-      border-bottom: solid lightgray 2px;
       @media screen and (min-width: 768px) {
-        border-top: none;
-        border-bottom: none;
         border-left: solid lightgray 2px;
         border-right: solid lightgray 2px;
       }
@@ -278,12 +287,14 @@ section#how-it-works .car-image-wrapper {
   }
   .big-headline {
     #big-headline;
+    position: relative;
+    z-index: 100;
+    top:80px;
+    left: 160px;
   }
   img {
-    position: relative;
-    z-index: -1;
-    bottom: 80px;
-    right: 80px;
+    display:block;
+    margin:auto;
   }
 }
 
@@ -301,6 +312,11 @@ section#how-it-works .car-image-wrapper {
       color: gray;
       border: none;
       box-shadow: none;
+      &.input-error {
+        &::-webkit-input-placeholder {
+          color: @myred;
+        }
+      }
       &:focus {
         outline: none;
       }
@@ -310,6 +326,9 @@ section#how-it-works .car-image-wrapper {
       border: none;
       font-size: 40px;
       &:hover {
+        color: @myred;
+      }
+      i.error-icon {
         color: @myred;
       }
     }

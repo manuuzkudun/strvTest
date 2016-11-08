@@ -16,6 +16,7 @@ class CommentInput extends Component {
 
   handleChange(event) {
     this.setState({commentText: event.target.value});
+    this.inputIcon['className'] = "fa fa-caret-right";
   }
 
   validateSubmit() {
@@ -33,8 +34,12 @@ class CommentInput extends Component {
       this.props.showAnswerInput(null);
       this.setState({ commentText: '' });
       this.textInput['placeholder'] = 'Write your comment here...';
+      this.textInput['className'] = "form-control"
     } else {
       this.textInput['placeholder'] = 'Ooh man! Just write your comment here';
+      this.textInput['className'] = "form-control input-error"
+      this.inputIcon['className'] = "fa fa-exclamation-triangle error-icon";
+      this.textInput.focus();
     }
   }
 
@@ -63,7 +68,11 @@ class CommentInput extends Component {
                 onChange={this.handleChange}
                 aria-describedby="basic-addon2" />
               <span className="input-group-addon" id="basic-addon2" onClick={this.handleSubmit}>
-                <i className="fa fa-caret-right" aria-hidden="true"></i>
+                <i
+                  className="fa fa-caret-right"
+                  aria-hidden="true"
+                  ref={(input) => this.inputIcon = input} >
+                </i>
               </span>
             </div>
           </form>
@@ -72,12 +81,6 @@ class CommentInput extends Component {
     );
   }
 }
-
-
-
-
-
-
 
 const mapStateToProps = (state) => {
   return {
