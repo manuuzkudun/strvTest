@@ -28,7 +28,12 @@
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 30% 100%, 0 90%, 0 25%);
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/car-header.jpg');
   background-position: center center;
-  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 768px) {
+  #main-header {
+    background-size: cover;
+  }
 }
 /* Main Navigation */
 .main-nav {
@@ -68,6 +73,7 @@ header .main-headline {
 header .main-headline h1 {
   font-family: 'Roboto', sans-serif;
   font-size: 70px;
+  line-height: 70px;
   font-weight: bold;
 }
 @media screen and (min-width: 768px) {
@@ -78,14 +84,17 @@ header .main-headline h1 {
 header .main-headline span {
   font-family: 'Merriweather', serif;
   font-size: 21px;
+  line-height: 32px;
   font-weight: 400;
   display: block;
+  padding: 20px 0;
 }
 /* End Header Main headline */
 /* Header main-button */
 header .main-button-wrapper {
   text-align: center;
   margin-top: 60px;
+  padding-bottom: 80px;
 }
 header .main-button-wrapper .main-button {
   background-color: #e43b40;
@@ -112,16 +121,25 @@ header .main-button-wrapper .main-button span {
 /* Header big-headline */
 header .big-headline {
   font-family: 'Roboto', sans-serif;
-  font-size: 20rem;
+  font-size: 150px;
   line-height: 100px;
   text-transform: uppercase;
   font-weight: bold;
   color: lightgray;
   opacity: 0.5;
-  margin-left: 60px;
   margin-top: 60px;
   padding-bottom: 60px;
   display: none;
+}
+@media screen and (min-width: 1000px) {
+  header .big-headline {
+    font-size: 200px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  header .big-headline {
+    font-size: 260px;
+  }
 }
 @media screen and (min-width: 768px) {
   header .big-headline {
@@ -133,13 +151,23 @@ header .big-headline {
 /*** ABOUT US SECTION ***/
 section#about-us .big-headline {
   font-family: 'Roboto', sans-serif;
-  font-size: 20rem;
+  font-size: 150px;
   line-height: 100px;
   text-transform: uppercase;
   font-weight: bold;
   color: lightgray;
   opacity: 0.5;
   text-align: center;
+}
+@media screen and (min-width: 1000px) {
+  section#about-us .big-headline {
+    font-size: 200px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  section#about-us .big-headline {
+    font-size: 260px;
+  }
 }
 .features-panel {
   box-shadow: lightgray 0px 10px 15px 5px;
@@ -148,6 +176,10 @@ section#about-us .big-headline {
   z-index: 50;
   margin-bottom: 60px;
   background-color: white;
+}
+.features-panel .feature {
+  padding: 0;
+  margin: 0;
 }
 .features-panel .feature hr {
   width: 80%;
@@ -169,12 +201,13 @@ section#about-us .big-headline {
 }
 .features-panel .feature .feature-content {
   text-align: center;
-  padding: 0 40px;
+  padding: 0 20px;
   margin-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
   .features-panel .feature .feature-content {
     text-align: left;
+    padding: 0 40px;
   }
 }
 .features-panel .feature .feature-content h3 {
@@ -201,7 +234,12 @@ section#about-us .big-headline {
   margin-top: 60px;
 }
 .instructions .instruction {
-  padding: 0 60px;
+  padding: 0 80px;
+}
+@media screen and (min-width: 768px) {
+  .instructions .instruction {
+    padding: 0 40px;
+  }
 }
 .instructions .instruction hr {
   width: 40%;
@@ -276,16 +314,26 @@ section#how-it-works .car-image-wrapper {
 }
 section#how-it-works .car-image-wrapper .big-headline {
   font-family: 'Roboto', sans-serif;
-  font-size: 20rem;
+  font-size: 150px;
   line-height: 100px;
   text-transform: uppercase;
   font-weight: bold;
   color: lightgray;
   opacity: 0.5;
+  text-align: center;
   position: relative;
   z-index: 100;
   top: 80px;
-  left: 160px;
+}
+@media screen and (min-width: 1000px) {
+  section#how-it-works .car-image-wrapper .big-headline {
+    font-size: 200px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  section#how-it-works .car-image-wrapper .big-headline {
+    font-size: 260px;
+  }
 }
 section#how-it-works .car-image-wrapper img {
   display: block;
@@ -389,7 +437,12 @@ footer {
   -webkit-clip-path: polygon(0 0, 30% 10%, 100% 0, 100% 100%, 0 100%, 0 25%);
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/car-footer2.jpg');
   background-position: center center;
-  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 768px) {
+  footer {
+    background-size: cover;
+  }
 }
 footer .main-headline {
   text-align: center;
@@ -401,6 +454,7 @@ footer .main-headline {
 footer .main-headline h1 {
   font-family: 'Roboto', sans-serif;
   font-size: 70px;
+  line-height: 70px;
   font-weight: bold;
 }
 @media screen and (min-width: 768px) {
@@ -411,8 +465,10 @@ footer .main-headline h1 {
 footer .main-headline span {
   font-family: 'Merriweather', serif;
   font-size: 21px;
+  line-height: 32px;
   font-weight: 400;
   display: block;
+  padding: 20px 0;
 }
 footer .main-button-wrapper {
   text-align: center;

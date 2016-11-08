@@ -6,7 +6,15 @@
 
 #big-headline() {
   font-family: 'Roboto', sans-serif;
-  font-size: 20rem;
+  font-size: 150px;
+  @media screen {
+    @media (min-width: 1000px) {
+      font-size: 200px;
+    }
+    @media (min-width: 1300px) {
+      font-size: 260px;
+    }
+  }
   line-height: 100px;
   text-transform: uppercase;
   font-weight: bold;
@@ -17,6 +25,7 @@
 #main-headline() {
   font-family: 'Roboto', sans-serif;
   font-size: 70px;
+  line-height: 70px;
   @media screen and (min-width: 768px) {
     font-size: 90px;
   }
@@ -51,6 +60,7 @@
 #sub-headline() {
   font-family: 'Merriweather', serif;
   font-size: 21px;
+  line-height: 32px;
   font-weight: 400;
 }
 
@@ -110,7 +120,11 @@
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 30% 100%, 0 90%, 0 25%);
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/car-header.jpg');
   background-position: center center;
-  background-size: cover;
+  background-repeat: no-repeat;
+  @media screen and (min-width: 768px) {
+    background-size: cover;
+  }
+
 }
 
 /* Main Navigation */
@@ -150,7 +164,8 @@ header .main-headline {
   }
   span {
     #sub-headline;
-    display: block;
+    display: block;padding: 20px 0;
+    padding: 20px 0;
   }
 }
 /* End Header Main headline */
@@ -158,6 +173,7 @@ header .main-headline {
 header .main-button-wrapper {
   text-align: center;
   margin-top: 60px;
+  padding-bottom: 80px;
   .main-button {
     #main-button
   }
@@ -166,7 +182,6 @@ header .main-button-wrapper {
 /* Header big-headline */
 header .big-headline {
   #big-headline;
-  margin-left: 60px;
   margin-top: 60px;
   padding-bottom: 60px;
   display:none;
@@ -191,6 +206,8 @@ section#about-us .big-headline {
   margin-bottom: 60px;
   background-color: white;
   .feature {
+    padding:0;
+    margin:0;
     hr {
       width: 80%;
       @media screen and (min-width: 768px) {
@@ -209,10 +226,11 @@ section#about-us .big-headline {
     }
     .feature-content {
       text-align: center;
+      padding: 0 20px;
       @media screen and (min-width: 768px) {
         text-align: left;
+        padding: 0 40px;
       }
-      padding: 0 40px;
       margin-bottom: 60px;
       h3 {
         #small-headline;
@@ -240,7 +258,10 @@ section#about-us .big-headline {
 .instructions {
   margin-top: 60px;
   .instruction {
-    padding: 0 60px;
+    padding: 0 80px;
+    @media screen and (min-width: 768px) {
+      padding: 0 40px;
+    }
     hr {
       width: 40%;
       @media screen and (min-width: 768px) {
@@ -291,10 +312,10 @@ section#how-it-works .car-image-wrapper {
   }
   .big-headline {
     #big-headline;
+    text-align: center;
     position: relative;
     z-index: 100;
     top:80px;
-    left: 160px;
   }
   img {
     display:block;
@@ -407,7 +428,10 @@ footer {
   -webkit-clip-path: polygon(0 0, 30% 10%, 100% 0, 100% 100%, 0 100%, 0 25%);
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/car-footer2.jpg');
   background-position: center center;
-  background-size: cover;
+  background-repeat: no-repeat;
+  @media screen and (min-width: 768px) {
+    background-size: cover;
+  }
   .main-headline {
     text-align: center;
     margin-top: 100px;
@@ -420,6 +444,7 @@ footer {
     span {
       #sub-headline;
       display: block;
+      padding: 20px 0;
     }
   }
   .main-button-wrapper {
