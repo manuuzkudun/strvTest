@@ -66,6 +66,7 @@
           </a>
         </div>
       </div>
+      <div style="padding: 20px"></div>
       <!-- End Leave a comment button -->
       <div class="big-headline">New STRV</div>
     </header>
@@ -81,7 +82,8 @@
         </div>
         <!-- End Section headline -->
         <!-- Big headline -->
-        <div class="big-headline">Handmade</div>
+        <div class="big-headline desktop">Handmade</div>
+        <div class="big-headline mobile">Hand<span>made</span></div>
         <!-- End Big headline -->
         <!-- Features panel -->
         <div class="features-panel">
@@ -198,11 +200,15 @@
     <!-- End Footer -->
   </body>
   <script src="/bundle.js"></script>
+  <!-- Script to change navigation CSS for small devices -->
   <script>
     $(function() {
       $('#ChangeToggle').click(function() {
         $('#navbar-hamburger').toggleClass('hidden');
         $('#navbar-close').toggleClass('hidden');
+        $('.main-nav').toggleClass('white-nav');
+        $('header .main-headline').toggleClass('hidden');
+        $('header .main-button-wrapper').toggleClass('hidden');
       });
       });
   </script>

@@ -6,7 +6,7 @@
 
 #big-headline() {
   font-family: 'Roboto', sans-serif;
-  font-size: 150px;
+  font-size: 140px;
   @media screen {
     @media (min-width: 1000px) {
       font-size: 200px;
@@ -126,10 +126,12 @@
   }
 
 }
-
+.white-nav {
+  background-color: white !important;
+}
 /* Main Navigation */
 .main-nav {
-  background-color: white;
+  background:none;
   @media screen and (min-width: 768px) {
     background: none;
   }
@@ -222,11 +224,28 @@ header .big-headline {
 section#about-us .big-headline {
   #big-headline;
   text-align: center;
+  &.mobile {
+    span {
+      display: block;
+      margin-top: 20px;
+    }
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+  &.desktop {
+    display: none;
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
+  }
 }
+
 .features-panel {
   box-shadow: lightgray 0px 10px 15px 5px;
   padding: 20px;
   position: relative;
+  bottom: 10px;
   z-index: 50;
   margin-bottom: 60px;
   background-color: white;

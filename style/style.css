@@ -35,9 +35,12 @@
     background-size: cover;
   }
 }
+.white-nav {
+  background-color: white !important;
+}
 /* Main Navigation */
 .main-nav {
-  background-color: white;
+  background: none;
   border: none;
   text-align: center;
 }
@@ -152,7 +155,7 @@ header .main-button-wrapper .main-button span {
 /* Header big-headline */
 header .big-headline {
   font-family: 'Roboto', sans-serif;
-  font-size: 150px;
+  font-size: 140px;
   line-height: 100px;
   text-transform: uppercase;
   font-weight: bold;
@@ -182,7 +185,7 @@ header .big-headline {
 /*** ABOUT US SECTION ***/
 section#about-us .big-headline {
   font-family: 'Roboto', sans-serif;
-  font-size: 150px;
+  font-size: 140px;
   line-height: 100px;
   text-transform: uppercase;
   font-weight: bold;
@@ -200,10 +203,28 @@ section#about-us .big-headline {
     font-size: 260px;
   }
 }
+section#about-us .big-headline.mobile span {
+  display: block;
+  margin-top: 20px;
+}
+@media screen and (min-width: 768px) {
+  section#about-us .big-headline.mobile {
+    display: none;
+  }
+}
+section#about-us .big-headline.desktop {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  section#about-us .big-headline.desktop {
+    display: block;
+  }
+}
 .features-panel {
   box-shadow: lightgray 0px 10px 15px 5px;
   padding: 20px;
   position: relative;
+  bottom: 10px;
   z-index: 50;
   margin-bottom: 60px;
   background-color: white;
@@ -345,7 +366,7 @@ section#how-it-works .car-image-wrapper {
 }
 section#how-it-works .car-image-wrapper .big-headline {
   font-family: 'Roboto', sans-serif;
-  font-size: 150px;
+  font-size: 140px;
   line-height: 100px;
   text-transform: uppercase;
   font-weight: bold;
