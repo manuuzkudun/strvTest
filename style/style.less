@@ -129,22 +129,47 @@
 
 /* Main Navigation */
 .main-nav {
-  background-color: inherit;
+  background-color: white;
+  @media screen and (min-width: 768px) {
+    background: none;
+  }
   border: none;
   text-align: center;
+  button#ChangeToggle {
+    border: none;
+    background: none;
+    #navbar-hamburger .icon-bar{
+      background-color: #fff;
+    }
+    #navbar-close {
+      color: #000;
+    }
+  }
+  #myNavbar {
+    border:none;
+  }
   ul.main-nav-links {
     display: inline-block;
     float: none;
     margin-top: 40px;
-    li > a {
-      color: lightgray !important;
-      text-transform: uppercase;
-      font-weight: bold;
-      padding: 5px 15px;
-      border-bottom: transparent solid 2px;
-      &:hover {
-        color: white !important;
-        border-bottom: #ef0d33 solid 2px;
+    li {
+      padding: 20px 0;
+      @media screen and (min-width: 768px) {
+        padding: 0;
+      }
+      & > a {
+        color: black;
+        @media screen and (min-width: 768px) {
+          color: lightgray !important;
+        }
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 5px 15px;
+        border-bottom: transparent solid 2px;
+        &:hover {
+          color: white !important;
+          border-bottom: #ef0d33 solid 2px;
+        }
       }
     }
   }

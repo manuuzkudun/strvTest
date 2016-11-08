@@ -37,21 +37,52 @@
 }
 /* Main Navigation */
 .main-nav {
-  background-color: inherit;
+  background-color: white;
   border: none;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .main-nav {
+    background: none;
+  }
+}
+.main-nav button#ChangeToggle {
+  border: none;
+  background: none;
+}
+.main-nav button#ChangeToggle #navbar-hamburger .icon-bar {
+  background-color: #fff;
+}
+.main-nav button#ChangeToggle #navbar-close {
+  color: #000;
+}
+.main-nav #myNavbar {
+  border: none;
 }
 .main-nav ul.main-nav-links {
   display: inline-block;
   float: none;
   margin-top: 40px;
 }
+.main-nav ul.main-nav-links li {
+  padding: 20px 0;
+}
+@media screen and (min-width: 768px) {
+  .main-nav ul.main-nav-links li {
+    padding: 0;
+  }
+}
 .main-nav ul.main-nav-links li > a {
-  color: lightgray !important;
+  color: black;
   text-transform: uppercase;
   font-weight: bold;
   padding: 5px 15px;
   border-bottom: transparent solid 2px;
+}
+@media screen and (min-width: 768px) {
+  .main-nav ul.main-nav-links li > a {
+    color: lightgray !important;
+  }
 }
 .main-nav ul.main-nav-links li > a:hover {
   color: white !important;
