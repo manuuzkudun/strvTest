@@ -221,22 +221,26 @@ header .big-headline {
 /*** END HEADER ***/
 
 /*** ABOUT US SECTION ***/
-section#about-us .big-headline {
-  #big-headline;
-  text-align: center;
-  &.mobile {
-    span {
-      display: block;
-      margin-top: 20px;
+section#about-us {
+  position: relative;
+  top:150px;
+  .big-headline {
+    #big-headline;
+    text-align: center;
+    &.mobile {
+      span {
+        display: block;
+        margin-top: 20px;
+      }
+      @media screen and (min-width: 768px) {
+        display: none;
+      }
     }
-    @media screen and (min-width: 768px) {
+    &.desktop {
       display: none;
-    }
-  }
-  &.desktop {
-    display: none;
-    @media screen and (min-width: 768px) {
-      display: block;
+      @media screen and (min-width: 768px) {
+        display: block;
+      }
     }
   }
 }
@@ -299,6 +303,17 @@ section#about-us .big-headline {
 /*** END ABOUT US SECTION ***/
 
 /*** HOW IT WORKS SECTION ***/
+.how-it-works-outer-container {
+  background-color: #f1f1f1;
+  @media screen and (min-width: 768px) {
+    -webkit-clip-path: polygon(0 0, 30% 10%, 100% 0, 100% 100%, 0 100%, 0 25%);
+  }
+  section#how-it-works {
+    margin-top: 150px;
+  }
+}
+
+
 .instructions {
   margin-top: 60px;
   .instruction {
@@ -346,13 +361,19 @@ section#how-it-works .main-button-wrapper {
   .main-button {
     #main-button
   }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 300px;
+  }
 }
 
-section#how-it-works .car-image-wrapper {
+section.car-image-wrapper {
   display: none;
   margin-top: 120px;
   @media screen and (min-width: 768px) {
-      display: block;
+    display: block;
+    position: relative;
+    bottom: 350px;
+    height: 100px;
   }
   .big-headline {
     #big-headline;
@@ -413,6 +434,9 @@ section#how-it-works .car-image-wrapper {
   box-shadow: lightgray 0px 10px 15px 5px;
   padding: 15px;
   margin: 40px 0;
+  @media screen and (min-width: 768px) {
+    margin: 40px;
+  }
 }
 
 .comment-list-wrapper {

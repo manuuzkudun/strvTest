@@ -183,6 +183,10 @@ header .big-headline {
 /* End Header big-headline */
 /*** END HEADER ***/
 /*** ABOUT US SECTION ***/
+section#about-us {
+  position: relative;
+  top: 150px;
+}
 section#about-us .big-headline {
   font-family: 'Roboto', sans-serif;
   font-size: 140px;
@@ -282,6 +286,17 @@ section#about-us .big-headline.desktop {
 }
 /*** END ABOUT US SECTION ***/
 /*** HOW IT WORKS SECTION ***/
+.how-it-works-outer-container {
+  background-color: #f1f1f1;
+}
+@media screen and (min-width: 768px) {
+  .how-it-works-outer-container {
+    -webkit-clip-path: polygon(0 0, 30% 10%, 100% 0, 100% 100%, 0 100%, 0 25%);
+  }
+}
+.how-it-works-outer-container section#how-it-works {
+  margin-top: 150px;
+}
 .instructions {
   margin-top: 60px;
 }
@@ -355,16 +370,24 @@ section#how-it-works .main-button-wrapper .main-button a {
 section#how-it-works .main-button-wrapper .main-button span {
   margin-left: 40px;
 }
-section#how-it-works .car-image-wrapper {
+@media screen and (min-width: 768px) {
+  section#how-it-works .main-button-wrapper {
+    margin-bottom: 300px;
+  }
+}
+section.car-image-wrapper {
   display: none;
   margin-top: 120px;
 }
 @media screen and (min-width: 768px) {
-  section#how-it-works .car-image-wrapper {
+  section.car-image-wrapper {
     display: block;
+    position: relative;
+    bottom: 350px;
+    height: 100px;
   }
 }
-section#how-it-works .car-image-wrapper .big-headline {
+section.car-image-wrapper .big-headline {
   font-family: 'Roboto', sans-serif;
   font-size: 140px;
   line-height: 100px;
@@ -378,16 +401,16 @@ section#how-it-works .car-image-wrapper .big-headline {
   top: 80px;
 }
 @media screen and (min-width: 1000px) {
-  section#how-it-works .car-image-wrapper .big-headline {
+  section.car-image-wrapper .big-headline {
     font-size: 200px;
   }
 }
 @media screen and (min-width: 1300px) {
-  section#how-it-works .car-image-wrapper .big-headline {
+  section.car-image-wrapper .big-headline {
     font-size: 260px;
   }
 }
-section#how-it-works .car-image-wrapper img {
+section.car-image-wrapper img {
   display: block;
   margin: auto;
 }
@@ -433,6 +456,11 @@ section#how-it-works .car-image-wrapper img {
   box-shadow: lightgray 0px 10px 15px 5px;
   padding: 15px;
   margin: 40px 0;
+}
+@media screen and (min-width: 768px) {
+  .comment-input-panel {
+    margin: 40px;
+  }
 }
 @media screen and (min-width: 768px) {
   .comment-list-wrapper {
